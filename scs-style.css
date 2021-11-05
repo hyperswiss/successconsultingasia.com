@@ -318,7 +318,6 @@ h2 {
 }
 
 .blog_section {
-  visibility: hidden
   margin-bottom: 10em;
 }
 
@@ -350,6 +349,10 @@ h2 {
     margin-top: 2em;
     row-gap: 1em;
   }
+}
+
+#article2 {
+  display: none;
 }
 
 .article {
