@@ -1,1 +1,1 @@
-# scs-website
+/templates/index.html
