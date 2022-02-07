@@ -1,1 +1,1 @@
-/templates/index.html
+hyperswiss/scs-website/templates/index.html
