@@ -1,0 +1,225 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Liberation Mono", Ubuntu;
+  font-size: 16px;
+  box-sizing: border-box; }
+
+p {
+  text-align: center; }
+  @media screen and (max-width: 740px) {
+    p {
+      font-size: 14px; } }
+
+.content {
+  position: relative; }
+
+.navbar-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 90px;
+  position: relative;
+  border-bottom: 4px solid beige; }
+  @media screen and (max-width: 740px) {
+    .navbar-grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: 8vh; } }
+
+@media screen and (max-width: 740px) {
+  .pre-navbar {
+    display: none; } }
+
+.openbtn {
+  display: none; }
+  @media screen and (max-width: 740px) {
+    .openbtn {
+      display: block;
+      width: 40px;
+      height: 40px;
+      margin-left: 80vw;
+      background-color: transparent;
+      border: none; } }
+
+.navigation-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: relative; }
+  @media screen and (max-width: 740px) {
+    .navigation-bar {
+      grid-template-columns: 1fr;
+      height: 100vh;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      overflow-x: hidden;
+      background-image: url("../img/okeykat-nYGMnyZHR2I-unsplash.webp");
+      width: 0; } }
+
+.navigation-bar a {
+  text-decoration: none;
+  display: grid;
+  font-size: 20px;
+  color: #008185;
+  text-shadow: 2px 2px white;
+  text-align: center;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  transition-property: background;
+  transition-duration: 1s; }
+  @media screen and (max-width: 740px) {
+    .navigation-bar a {
+      text-align: left;
+      padding-top: 15px;
+      padding-bottom: 0;
+      padding-left: 10px; } }
+
+@media screen and (max-width: 740px) {
+  #contact-link {
+    padding-bottom: 250px; } }
+
+#hamburger {
+  width: 40px;
+  height: 40px; }
+
+#closebtn {
+  display: none; }
+  @media screen and (max-width: 740px) {
+    #closebtn {
+      display: block;
+      justify-self: end;
+      font-size: 30px;
+      text-decoration: none;
+      margin-right: 30px; } }
+
+.drpcontent {
+  display: none;
+  position: relative;
+  min-width: 150px;
+  max-width: 230px;
+  z-index: 1; }
+  @media screen and (max-width: 740px) {
+    .drpcontent {
+      display: block;
+      margin-left: 20vw; } }
+
+.drpcontent a {
+  text-shadow: none; }
+
+.navbar-link:hover {
+  text-shadow: none;
+  background-color: beige;
+  color: #008185; }
+
+.navbar-button:hover {
+  text-shadow: none;
+  background-color: beige;
+  color: #008185; }
+
+.dropdown:hover .drpcontent {
+  display: block; }
+
+h1, h2, h3 {
+  font-family: "Champagne & Limousines", "Ubuntu";
+  text-align: center; }
+  @media screen and (max-width: 740px) {
+    h1, h2, h3 {
+      font-family: "Blogger Sans", "Ubuntu"; } }
+
+h1 {
+  font-size: 3vw;
+  letter-spacing: 4px;
+  font-weight: lighter; }
+  @media screen and (max-width: 740px) {
+    h1 {
+      font-size: 3.5em; } }
+
+h2 {
+  font-size: 2vw;
+  letter-spacing: 1px;
+  font-weight: lighter; }
+  @media screen and (max-width: 740px) {
+    h2 {
+      font-size: 2.5em; } }
+
+h3 {
+  font-size: 1.7vw;
+  text-align: left;
+  font-weight: lighter; }
+
+.cont {
+  margin-left: 3em;
+  margin-right: 3em;
+  margin-bottom: 3em; }
+  @media screen and (max-width: 740px) {
+    .cont {
+      margin-bottom: 0px; } }
+
+.cont h1 {
+  margin-top: 2em; }
+  @media screen and (max-width: 740px) {
+    .cont h1 {
+      margin: 4vh 0; } }
+
+#icon-arrow-down {
+  margin-top: 3em; }
+
+.pictures-section {
+  background: #4682b4;
+  padding-top: 5em;
+  padding-bottom: 5em; }
+
+.grid_pictures {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5%;
+  margin: 0em 15em; }
+  @media screen and (max-width: 740px) {
+    .grid_pictures {
+      font-size: 16px;
+      grid-template-columns: 1fr;
+      grid-gap: 1vh;
+      margin: 0em 12vw 0 10vw; } }
+
+.pics img {
+  display: grid;
+  width: 70%;
+  transform: rotate(4deg); }
+  @media screen and (max-width: 740px) {
+    .pics img {
+      width: 100%; } }
+
+.flex-box {
+  margin-bottom: 5em;
+  margin-top: 5em; }
+
+footer {
+  display: flex;
+  justify-items: center;
+  background: #3c204f;
+  color: white;
+  padding: 1em 0 0 0;
+  margin: 0px; }
+  @media screen and (max-width: 740px) {
+    footer {
+      display: block; } }
+
+.khreativ {
+  flex: 1; }
+
+.credits {
+  flex: 2; }
+
+.links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 2em; }
+
+#khreativ-title a {
+  text-decoration: underline;
+  text-decoration-thickness: 10px;
+  text-decoration-color: green;
+  color: white;
+  font-size: 24px; }
+
+/*# sourceMappingURL=common.css.map */
