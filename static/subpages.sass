@@ -17,144 +17,21 @@ $size2: 2px
 $size40: 40px
 $position: -10px
 $border-bg-col: rgba(140, 20, 137, 100)
-
-
+    
 body 
-    margin: 0px
-    padding: 0px
-    font-family: 'Liberation Mono', Ubuntu
-    font-size: $bodyfontsize-n
-    box-sizing: border-box
     background-image: url(../img/okeykat-nYGMnyZHR2I-unsplash.webp)
-
-p
-    text-align: center
-    @media screen and (max-width: $SM)
-        font-size: 12px
-    
-.content
-    position: relative//necessary to insert content in the image
-
-.navbar-grid
-    display: grid
-    grid-template-columns: 1fr 1fr
-    grid-template-rows: 90px
-    position: relative
-    border-bottom: 4px solid $bg_color
-    
-.navigation-bar
-    display: grid
-    grid-template-columns: 1fr 1fr 1fr 1fr
-    //grid-template-rows: 85px
-    position: relative
-
-.navbar-button
-    text-decoration: none
-    display: grid
-    font-size: $bodyfontsize-xl
-    color: $navfont-color
-    text-shadow: $navshadow
-    text-align: center
-    padding-top: 1.5em
-    padding-bottom: 1.5em
-
-.navbar-link
-    display: grid
-    font-size: $bodyfontsize-xl
-    color: $navfont-color
-    text-shadow: $navshadow
-    text-align: center
-    padding-top: 1.5em
-    padding-bottom: 1.5em
-    text-decoration: none
-    transition-property: background
-    transition-duration: 2s
-
-.drpcontent
-    display: none
-    background-color: $bg_color
-    position: absolute
-    min-width: 150px
-    width: 250px
-    z-index: 1
-
-.dropdown-item
-    font-size: $bodyfontsize-xl
-    color: $navfont-color
-    text-align: left
-    float: none
-    display: block
-
-.navbar-link:hover
-    text-shadow: none
-    background-color: $bg_color
-    color: $navfont-color
-
-.navbar-button:hover
-    text-shadow: none
-    background-color: $bg_color
-    color: $navfont-color
-
-.dropdown:hover .drpcontent
-    display: block
-
-h1, h2, h3
-    font-family: 'Champagne & Limousines', 'Ubuntu'
-    text-align: center
-    @media screen and (max-width:$SM)
-        font-family: 'Liberation Mono','Ubuntu'
-
-h1
-    font-size: 3vw
-    letter-spacing: 4px
-    font-weight: lighter
-    @media screen and (max-width:$SM)
-        font-size: 6vw 
-
-h2 
-    font-size: 2vw
-    letter-spacing: 1px
-    font-weight: lighter
-    @media screen and (max-width:$SM)
-        font-size: 4vw
-
-h3
-    font-size: 1.7vw
-    text-align: left
-    font-weight: lighter
-
-.cont
-    margin-left: 3em
-    margin-right: 3em
-    margin-bottom: 3em
-    @media screen and (max-width:$SM)
-        margin-bottom: 0px
-
-.cont h1
-    margin-top: 2em
-
-#icon-arrow-down
-    margin-top: 3em
-
-#logo
-    margin-top: 1em
-    width: 600px
-    height: auto
-    @media screen and (max-width: $SM)
-        width: 80px
-        height: auto
-
-.detail
-    margin-left: 20em
-    margin-right: 20em
-    margin-bottom: 10em
-    margin-top: 2em
-    @media screen and (max-width:$SM)
-        margin: 2em 1em 5em 1em
+ 
 
 .logo-top
-    padding-top: 2em
-    width: 20%
+    width: 20vw
+    margin-top: 20px 
+    @media screen and (max-width: $SM)
+        width: 30vw
+
+.detail
+    margin: 0 20vw 10vh 20vw
+    @media screen and (max-width: $SM)
+        margin: 0 2vw
 
 .grid-box
     display: grid
@@ -162,6 +39,9 @@ h3
     justify-items: center
     margin: 2em 0 0 0
     @media screen and (max-width: $SM)
+        grid-template-columns: 1fr
+        grid-row-gap: 1em
+
 
 .grid-double
     display: grid
@@ -171,7 +51,9 @@ h3
 
 .card
     //border: none
-    width: 30em
+    width: 27vw
+    @media screen and (max-width: $SM)
+        width: 80vw
 
 .card-odd
     background-color: rgba(0, 0, 0, 0.7)
@@ -195,10 +77,13 @@ h3
     margin-top: 2em
     display: grid
 
-.flex-box
+.people-flex
     display: flex
     grid-template-column: 1fr 1fr
     margin: 0 20em
+    @media screen and (max-width: $SM)
+        display: block
+        margin: 0 5vw
 
 .space
     flex: 1
@@ -210,6 +95,16 @@ h3
 
 .people img
     width: 6vw
+    @media screen and (max-width: $SM)
+        min-width: 80px
+
+.contact_section
+    background: #4682b4
+    padding-top: 2em
+    padding-bottom: 5em
+
+.contact_section > title
+    display: grid
 
 .grid_contact
     display: grid
@@ -300,55 +195,15 @@ textarea
 #email-sent
     margin: 15vh 0 25vh 0
 
-.pictures-section
-    background: #4682b4
-    padding-top: 2em
-    padding-bottom: 5em
-
-.grid_pictures
-    display: grid
-    grid-template-columns: 1fr 1fr 1fr
-    grid-gap: 5%
-    margin: 0em 15em
-    @media screen and (max-width: $SM)
-        font-size: $bodyfontsize-n
-        grid-template-columns: 1fr
-        grid-gap: 1vh
-        margin: 0em 1em
-
-.pics img
-    display: grid
-    width: 70%
-    transform: rotate(4deg)
-
-.flex-box
-    margin-bottom: 5em
-    margin-top: 5em
-    
 .people
     display: grid
     grid-template-columns: auto 1fr
+
+.people-flex
+    margin-top: 2vh
 
 .people-content p
     display: grid
     padding: 0 2em 0 2em
 
 
-footer
-    display: flex
-    justify-items: center
-    background: #3c204f
-    color: white
-    padding: 1em 0 0 0 
-    margin: 0px
-
-.khreativ
-    flex: 1
-
-.credits
-    flex: 2
-
-.links
-    display: grid
-    grid-template-columns: 1fr 1fr 1fr
-    margin-top: 2em

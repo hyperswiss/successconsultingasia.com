@@ -3,7 +3,7 @@ document.write('\
 <footer id="footer">\
     <div class="khreativ">\
         <h2>Made by</h2>    \
-        <p><a href="https://hyperswiss.github.io/khreativ-website">KhreatiV</a> Web Design 2021</p>\
+        <p id="khreativ-title"><a href="https://hyperswiss.github.io/khreativ-website"><strong>KhreatiV</strong></a> Web Design 2021</p>\
         <p>Siem Reap</p>\
     </div>\
 \

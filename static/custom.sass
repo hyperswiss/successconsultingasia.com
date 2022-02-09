@@ -17,20 +17,7 @@ $size2: 2px
 $size40: 40px
 $position: -10px
 $border-bg-col: rgba(140, 20, 137, 100)
-
-
-body 
-    margin: 0px
-    padding: 0px
-    font-family: 'Liberation Mono', Ubuntu
-    font-size: $bodyfontsize-n
-    box-sizing: border-box
-
-p
-    text-align: center
-    @media screen and (max-width: $SM)
-        font-size: 12px
-
+    
 #myBtn
     display: none
     position: fixed
@@ -74,115 +61,6 @@ p
     @media screen and (max-width: $SM)    
         display: block
     
-        
-.content
-    position: relative//necessary to insert content in the image
-
-.navbar-grid
-    display: grid
-    grid-template-columns: 1fr 1fr
-    grid-template-rows: 90px
-    position: relative
-    border-bottom: 4px solid $bg_color
-    
-.navigation-bar
-    display: grid
-    grid-template-columns: 1fr 1fr 1fr 1fr
-    //grid-template-rows: 85px
-    position: relative
-
-.navbar-button
-    text-decoration: none
-    display: grid
-    font-size: $bodyfontsize-xl
-    color: $navfont-color
-    text-shadow: $navshadow
-    text-align: center
-    padding-top: 1.5em
-    padding-bottom: 1.5em
-    transition-property: background
-    transition-duration: 2s
-
-.navbar-link
-    display: grid
-    font-size: $bodyfontsize-xl
-    color: $navfont-color
-    text-shadow: $navshadow
-    text-align: center
-    padding-top: 1.5em
-    padding-bottom: 1.5em
-    text-decoration: none
-    transition-property: background
-    transition-duration: 2s
-
-.drpcontent
-    display: none
-    //background-color: $bg_color
-    text-shadow: $navshadow
-    padding-top: 1em
-    position: absolute
-    min-width: 150px
-    width: 250px
-    z-index: 1
-
-.dropdown-item
-    font-size: $bodyfontsize-xl
-    color: $navfont-color
-    text-align: left
-    float: none
-    display: block
-
-.navbar-link:hover
-    text-shadow: none
-    background-color: $bg_color
-    color: $navfont-color
-
-.navbar-button:hover
-    text-shadow: none
-    background-color: $bg_color
-    color: $navfont-color
-
-.dropdown:hover .drpcontent
-    display: block
-
-h1, h2, h3
-    font-family: 'Champagne & Limousines', 'Ubuntu'
-    text-align: center
-    @media screen and (max-width:$SM)
-        font-family: 'Liberation Mono','Ubuntu'
-
-h1
-    font-size: 3vw
-    letter-spacing: 4px
-    font-weight: lighter
-    @media screen and (max-width:$SM)
-        font-size: 6vw 
-
-h2 
-    font-size: 2vw
-    letter-spacing: 1px
-    font-weight: lighter
-    @media screen and (max-width:$SM)
-        font-size: 4vw
-
-h3
-    font-size: 1.7vw
-    text-align: left
-    font-weight: lighter
-
-.cont
-    margin-left: 3em
-    margin-right: 3em
-    margin-bottom: 3em
-    @media screen and (max-width:$SM)
-        margin-bottom: 0px
-
-.cont h1
-    margin-top: 2em
-
-#icon-arrow-down
-    margin-top: 3em
-
 #logo
     margin-top: 1em
     width: 600px
@@ -216,8 +94,6 @@ h3
         padding-left: 0px
         padding-bottom: 0px
         grid-template-rows: 3em 13em 3em 13em 3em 13em 3em 13em 3em 13em
-
-
 .box
     box-shadow: (2px 0px 10px gray)
     position: relative
@@ -287,134 +163,6 @@ h3
     height: $size2
 
 
-.detail
-    margin-left: 20em
-    margin-right: 20em
-    margin-bottom: 10em
-    margin-top: 2em
-    @media screen and (max-width:$SM)
-        margin-bottom: 0px
-
-.logo-top
-    padding-top: 2em
-    width: 20%
-
-.row
-    margin: 2em 0 0 0
-
-.card
-    //border: none
-
-.card-odd
-    background-color: rgba(0, 0, 0, 0.7)
-    color: white
-    
-.detail h1
-    margin-bottom: 2em
-
-.card-odd h2
-    border-bottom: 1px solid white
-
-.card-even h2
-    border-bottom: 1px solid black
-
-.card-img-top
-    position: relative
-    height: 3px
-
-.blog_section
-    margin-bottom: 10em
-
-/*.blog_section > h1
-    margin-top: 2em
-    margin-bottom: 0px
-    @media screen and (max-width: $SM)
-        margin-top: 2em
-        margin-bottom: 0em
-/*.grid_blog_list
-    display: grid
-    grid-template-columns: 1fr 1fr
-    column-gap: 2em
-    margin-left: 25em
-    margin-right: 25em
-    margin-top: 10em
-    @media screen and (max-width: $SM)
-        grid-template-columns: 1fr
-        padding-top: 2em
-        margin-left: 1em
-        margin-right: 1em
-        margin-top: 2em
-        row-gap: 1em
-
-/*.article_card
-    display: grid
-    border: 5px dotted black
-    padding: 1em
-    @media screen and (max-width: $SM)
-        font-size: $bodyfontsize-s
-
-/*.btn-summary
-    bottom: 5px
-    margin-left: 8em    
-    margin-right: auto
-    position: relative
-
-/*.btn-summary a
-    text-decoration: none
-
-/*.article-head
-    display: grid
-    grid-template-columns: 1fr 1fr
-
-/*.article-full
-    margin-left: 25em
-    margin-right: 25em
-    margin-top: 10em
-    border: 5px dotted black
-    padding: 1em
-    @media screen and ( max-width: $SM)
-        padding-top: 2em
-        margin-left: 1em
-        margin-right: 1em
-        margin-top: 2em
-
-/*.article-full img
-    object-position: 50% 50%    
-    width: 50%
-    margin-left: 25%
-    @media screen and ( max-width: $SM)
-        width: 90%
-        margin-left: 5%
-
-/*.author
-    margin-left: 10px
-
-/*summary
-    font-size: $bodyfontsize-xl
-    margin-top: 2em
-    margin-bottom: 2em
-    @media screen and (max-width: $SM)
-        font-size: $bodyfontsize-s
-        font-weight: bold
-
-/*.article-head img
-    display: grid
-    width: 160px
-    margin-left: auto
-    margin-right: auto
-    align-items: center
-    justify-content: center
-    @media screen and (max-width: $SM)
-        width: 50%
-
-/*.article p
-    text-align: start
-
-/*.article-trunc img
-    width: 400px
-    margin-left: auto
-    margin-right: auto
-    
 .contact_section
     background: #4682b4
     padding-top: 2em
@@ -422,117 +170,6 @@ h3
 
 .contact_section > title
     display: grid
-
-.grid_contact
-    display: grid
-    grid-template-columns: 1fr 1fr
-    margin: 0em 15em
-    @media screen and (max-width: $SM)
-        font-size: $bodyfontsize-n
-        grid-template-columns: 1fr
-        grid-gap: 1vh
-        margin: 0em 1em
-
-.grid_form
-    display: grid
-    grid-template-columns: 1fr 2fr
-    grid-template-rows: auto
-
-.grid_form > label
-    text-align: right
-
-.grid_form > label, input, textarea
-    margin: 5px
-
-.grid_form > input, textarea
-    border-radius: 5px
-
-#last_name span
-    display: inline
-    @media screen and (max-width: $SM)
-        display: block
-
-textarea
-    height: 10vh
-    overflow: scroll
-
-.email[href^="mailto"]::before
-    content: url("img/at-solid.svg")
-
-.email
-    color: white
-
-.btn_container
-    display: grid
-    grid-column-start: 1
-    grid-column-end: 3
-    align-items: center
-    justify-content: center    
-
-.btn_container button
-    margin-top: 40px
-
-.submit_button
-    border: 0px
-    line-height: 2.5
-    padding: 0px 50px
-    font-size: $bodyfontsize-n
-    text-align: center
-    color: $navfont-color
-    border-radius: 5px
-    @media screen and (max-width: $SM)
-        margin-top: 1em
-        line-height: 2
-
-.submit_button:hover 
-    color: $hover-color
-    cursor: pointer
-
-.submit_button:active
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-
-.grid_countries
-    margin: 1em 3vw
-    display: grid
-    align-items: center
-    justify-items: center
-
-.countries
-    font-size: $bodyfontsize-n
-
-.email
-    text-decoration: none
-    color: rgba(0, 0, 0, 0.7)
-    
-.icon
-    
-    width: 20px
-    height: auto
-
-#email-sent
-    margin: 15vh 0 25vh 0
-.pictures-section
-    background: #4682b4
-    
-    padding-top: 2em
-    padding-bottom: 5em
-
-.grid_pictures
-    display: grid
-    grid-template-columns: 1fr 1fr 1fr
-    grid-gap: 5%
-    margin: 0em 15em
-    @media screen and (max-width: $SM)
-        font-size: $bodyfontsize-n
-        grid-template-columns: 1fr
-        grid-gap: 1vh
-        margin: 0em 1em
-
-.pics img
-    display: grid
-    width: 70%
-    transform: rotate(4deg)
-    
 footer
     display: flex
     justify-items: center
@@ -540,14 +177,5 @@ footer
     color: white
     padding: 1em 0 0 0 
     margin: 0px
-
-.khreativ
-    flex: 1
-
-.credits
-    flex: 2
-
-.links
-    display: grid
-    grid-template-columns: 1fr 1fr 1fr
-    margin-top: 2em
+    @media screen and (max-width: $SM)
+        display: block
