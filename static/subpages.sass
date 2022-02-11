@@ -79,27 +79,35 @@ body
     display: grid
 
 .people-flex
-    display: grid
-    margin: 0 20em
+    display: block
+    margin: 2vh 20em
     @media screen and (max-width: $SM)
         display: block
         margin: 0 5vw
 
-.people
+.people-content
     display: grid
+    grid-template-columns: 1fr 2fr
+    background-color: aqua
 
-.people img
+.people h2
+    margin: 4vh 0
+
+.people-img
     display: grid
     width: 6vw
+    background-color: teal
     @media screen and (max-width: $SM)
         min-width: 80px
-
-.people-flex
-    margin-top: 2vh
 
 .people-text p
     display: grid
     padding: 0 2em 0 2em
+
+.space
+    width: 30vw
+    height: 20vh
+    background-color: green
 
 .contact_section
     background: #4682b4
@@ -197,3 +205,10 @@ textarea
 
 #email-sent
     margin: 15vh 0 25vh 0
+.blue
+    height: 200px
+    background-color: blue
+
+.red
+    height: 200px
+    background-color: red

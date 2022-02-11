@@ -186,7 +186,7 @@ h3 {
 
 .pics img {
   display: grid;
-  width: 70%;
+  width: 289px;
   transform: rotate(4deg); }
   @media screen and (max-width: 740px) {
     .pics img {

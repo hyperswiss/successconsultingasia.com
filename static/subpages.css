@@ -60,29 +60,37 @@ body {
   display: grid; }
 
 .people-flex {
-  display: grid;
-  margin: 0 20em; }
+  display: block;
+  margin: 2vh 20em; }
   @media screen and (max-width: 740px) {
     .people-flex {
       display: block;
       margin: 0 5vw; } }
 
-.people {
-  display: grid; }
-
-.people img {
+.people-content {
   display: grid;
-  width: 6vw; }
-  @media screen and (max-width: 740px) {
-    .people img {
-      min-width: 80px; } }
+  grid-template-columns: 1fr 2fr;
+  background-color: aqua; }
 
-.people-flex {
-  margin-top: 2vh; }
+.people h2 {
+  margin: 4vh 0; }
+
+.people-img {
+  display: grid;
+  width: 6vw;
+  background-color: teal; }
+  @media screen and (max-width: 740px) {
+    .people-img {
+      min-width: 80px; } }
 
 .people-text p {
   display: grid;
   padding: 0 2em 0 2em; }
+
+.space {
+  width: 30vw;
+  height: 20vh;
+  background-color: green; }
 
 .contact_section {
   background: #4682b4;
@@ -182,5 +190,13 @@ textarea {
 
 #email-sent {
   margin: 15vh 0 25vh 0; }
+
+.blue {
+  height: 200px;
+  background-color: blue; }
+
+.red {
+  height: 200px;
+  background-color: red; }
 
 /*# sourceMappingURL=subpages.css.map */
