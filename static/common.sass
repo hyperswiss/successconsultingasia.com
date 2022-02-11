@@ -29,7 +29,7 @@ body
 p
     text-align: center
     @media screen and (max-width: $SM)
-        font-size: 14px
+        font-size: 12px
 
 .content
     position: relative//necessary to insert content in the image
@@ -119,7 +119,7 @@ p
         margin-left: 20vw
 
 .drpcontent a
-    text-shadow: none
+    text-shadow: $navshadow
 
 .navbar-link:hover
     text-shadow: none
@@ -145,14 +145,14 @@ h1
     letter-spacing: 4px
     font-weight: lighter
     @media screen and (max-width:$SM)
-        font-size: 3.5em
+        font-size: 2.5em
 
 h2 
     font-size: 2vw
     letter-spacing: 1px
     font-weight: lighter
     @media screen and (max-width:$SM)
-        font-size: 2.5em
+        font-size: 1.5em
 
 h3
     font-size: 1.7vw
@@ -160,35 +160,37 @@ h3
     font-weight: lighter
 
 .cont
-    margin-left: 3em
-    margin-right: 3em
-    margin-bottom: 3em
+    margin-left: 3vw
+    margin-right: 3vw
+    margin-bottom: 3vh
     @media screen and (max-width:$SM)
         margin-bottom: 0px
 
 .cont h1
-    margin-top: 2em
+    margin-top: 2vh
     @media screen and (max-width: $SM)
         margin: 4vh 0
 
 #icon-arrow-down
-    margin-top: 3em
+    margin-top: 3vh
 
 .pictures-section
     background: #4682b4
-    padding-top: 5em
-    padding-bottom: 5em
+    padding-top: 5vh
+    padding-bottom: 5vh
+    @media screen and (max-width: $SM)
+        padding: 5vh 0
 
 .grid_pictures
     display: grid
     grid-template-columns: 1fr 1fr 1fr
     grid-gap: 5%
-    margin: 0em 15em
+    margin: 0 15vw
     @media screen and (max-width: $SM)
         font-size: $bodyfontsize-n
         grid-template-columns: 1fr
         grid-gap: 1vh
-        margin: 0em 12vw 0 10vw
+        margin: 0 12vw 0 10vw
 
 .pics img
     display: grid
@@ -198,29 +200,33 @@ h3
         width: 100%
 
 .flex-box
-    margin-bottom: 5em
-    margin-top: 5em
+    margin-bottom: 5vh
+    margin-top: 5vh
     
 footer
     display: flex
     justify-items: center
     background: #3c204f
     color: white
-    padding: 1em 0 0 0 
+    padding: 1vh 0 0 0 
     margin: 0px
     @media screen and (max-width: $SM)
         display: block
+        padding: 5vh 0
 
 .khreativ
     flex: 1
 
 .credits
     flex: 2
+    margin: 0 5vw
 
 .links
     display: grid
     grid-template-columns: 1fr 1fr 1fr
-    margin-top: 2em
+    margin-top: 2vh
+    @media screen and (max-width: $SM)
+        grid-template-columns: 1fr
 
 #khreativ-title a
     text-decoration: underline
@@ -228,3 +234,6 @@ footer
     text-decoration-color: green
     color: white
     font-size: 24px
+
+.khreativ p
+    font-size: 16px

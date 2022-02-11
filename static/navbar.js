@@ -34,10 +34,10 @@ closeBtn.addEventListener("click", () => {
 
 function showNav() {
     document.querySelector(".navigation-bar").style.width = "100vw";
-    document.querySelector(".main").style.display = "none";
+    document.querySelector(".openbtn").style.display = "none";
 }
 
 function hideNav() {
     document.querySelector(".navigation-bar").style.width = "0vw";
-    document.querySelector(".main").style.display = "grid";
+    document.querySelector(".openbtn").style.display = "block";
 }

@@ -17,10 +17,10 @@ $size2: 2px
 $size40: 40px
 $position: -10px
 $border-bg-col: rgba(140, 20, 137, 100)
-    
+
 body 
     background-image: url(../img/okeykat-nYGMnyZHR2I-unsplash.webp)
- 
+
 
 .logo-top
     width: 20vw
@@ -41,6 +41,7 @@ body
     @media screen and (max-width: $SM)
         grid-template-columns: 1fr
         grid-row-gap: 1em
+        margin-bottom: 5vh
 
 
 .grid-double
@@ -78,25 +79,27 @@ body
     display: grid
 
 .people-flex
-    display: flex
-    grid-template-column: 1fr 1fr
+    display: grid
     margin: 0 20em
     @media screen and (max-width: $SM)
         display: block
         margin: 0 5vw
 
-.space
-    flex: 1
-
 .people
-    display: flex
-    flex-direction: row
-    flex: 2
+    display: grid
 
 .people img
+    display: grid
     width: 6vw
     @media screen and (max-width: $SM)
         min-width: 80px
+
+.people-flex
+    margin-top: 2vh
+
+.people-text p
+    display: grid
+    padding: 0 2em 0 2em
 
 .contact_section
     background: #4682b4
@@ -194,16 +197,3 @@ textarea
 
 #email-sent
     margin: 15vh 0 25vh 0
-
-.people
-    display: grid
-    grid-template-columns: auto 1fr
-
-.people-flex
-    margin-top: 2vh
-
-.people-content p
-    display: grid
-    padding: 0 2em 0 2em
-
-
