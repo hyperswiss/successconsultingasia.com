@@ -1,0 +1,52 @@
+
+<div class="navbar-grid">
+    <div class="pre-navbar"></div>
+    <button class="openbtn"><img id="hamburger" src="../img/hamburger.png" alt="hamburger"></button>
+    <div class="navbar">
+        <a href="#" id="closebtn" class="closebtn">X</a>
+        <a href="index.php" class="navbar-link" id="home">home</a>
+        <a href="intro.php" class="navbar-link">introduction</a>
+        <div class="dropdown">
+            <a href="#" class="dropbtn" id="services">services</a>
+            <div class="drpcontent">
+                <a class="dropdown-item" href="../templates/finances.php">finances</a>
+                <a class="dropdown-item" href="../templates/human-ressources.php">human resources</a>
+                <a class="dropdown-item" href="../templates/sales.php">sales & marketing</a>
+                <a class="dropdown-item" href="../templates/design.php">concept & design</a>
+                <a class="dropdown-item" href="../templates/tech.php">technology</a>
+            </div>
+        </div>
+        <a href="contact.php" class="navbar-link" id="contact-link">contact</a>
+    </div>
+</div>
+<div class="icons">
+    <a href="https://www.facebook.com/Scs-Consulting-Services-102065865618974" class="icon"><img src="../img/logo-facebook.png" alt="facebook logo"></a>
+    <a href="https://www.linkedin.com/company/success-consulting-asia/" class="icon"><img src="../img/logo-linkedin.png" alt="linkedin logo"></a>
+    <a href="mailto:cambodia.admin@successconsultingasia.com" class="icon"><img src="../img/email-icon.png" alt="email logo"></a>
+</div>
+
+<script>
+
+    let openBtn = document.querySelector(".openbtn");
+    openBtn.addEventListener("click", () => {
+        showNav();
+    });
+
+    let closeBtn = document.querySelector(".closebtn");
+    closeBtn.addEventListener("click", () => {
+        hideNav();
+    });
+
+    function showNav() {
+        document.querySelector(".navbar").style.width = "100vw";
+        document.querySelector(".drpcontent").style.display = "block";
+        document.querySelector(".openbtn").style.display = "none";
+    }
+
+    function hideNav() {
+        document.querySelector(".navbar").style.width = "0vw";
+        document.querySelector(".drpcontent").style.display = "none";
+        document.querySelector(".openbtn").style.display = "block";
+    }
+
+</script>

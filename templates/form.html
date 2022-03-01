@@ -1,0 +1,83 @@
+
+
+    <div class="grid_contact">
+        <div class="grid_form">
+            <form action="process.php" id="myform" name="contact_form" onsubmit="return validateForm()" method="post" role="form">
+        		<div class="form-group">
+    				<input type="text" class="form-control" name="fname" pattern="[A-Za-z,-]+" placeholder="First Name" required autofocus>
+    			</div>
+    			<div class="form-group">
+    				<input type="text" class="form-control" name="lname" pattern="[A-Za-z,-']+" placeholder="Last Name" required>
+    			</div>
+                <div class="form-group">
+                    <input type="tel" class="form-control" name="phone" pattern="[0-9+ ()]+" placeholder="Phone Number (optional)">
+                </div>
+    			<div class="form-group">
+    				<input type="email" class="form-control" name="email" placeholder="Email" required>
+    			</div>
+                <div class="form-group">
+    				<input type="text" class="form-control" name="subject" placeholder="Subject" required>
+    			</div>
+                <div class="form-group">
+                    <textarea class="form-control" type="textarea" name="message" placeholder="Message" required></textarea>                   
+                </div>
+                <div class="btn-cont">
+                    <button class="btn" type="button" onclick="reset()">Reset</button>
+                    <button class="btn" type="submit" id="submit" name="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="grid_countries">
+            <div class="card-countries">
+                <div class="card-body">
+                    <img src="../img/rect843.png" class="card-img-top" alt="...">
+                    <div class="countries">
+                        <p><strong>Thailand - Myanmar</strong></p>
+                        <p><a class="email" href="mailto:thailand.admin@successconsultingasia.com"><span>thailand.admin@</span><span>successconsultingasia.com</span></a></p>
+                        <p><img class="icon" src="../img/phone-solid.svg" alt="phone"> +66 901 625 166</p>
+                    </div>
+                    <div class="countries">
+                        <p><strong>Cambodia - Vietnam</strong></p>
+                        <p><a class="email" href="mailto:cambodia.admin@successconsultingasia.com"><span>cambodia.admin@</span><span>successconsultingasia.com</span></a></p>
+                        <p><img class="icon" src="../img/phone-solid.svg" alt="phone"> +855 17 573 494</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function reset() {
+            document.getElementById("myform").reset();
+        }
+
+        function validateForm() {
+            if (document.contact_form.fname.value == "") {
+                alert("This field must be filled");
+                document.contact_form.fname.focus() ;
+                return false;
+            }
+            if (document.contact_form.lname.value == "") {
+                alert("This field must be filled");
+                document.contact_form.lname.focus();
+                return false;
+            }
+            if (document.contact_form.email.value == "") {
+                alert("You must enter your email");
+                document.contact_form.email.focus();
+                return false ;
+            }
+            if (document.contact_form.subject.value == "") {
+                alert("You must enter a valid email");
+                document.contact_form.subject.focus();
+                return false ;
+            }
+            if (document.contact_form.message.value == "") {
+                alert("Please provide some informations");
+                document.contact_form.message.focus();
+                return false ;
+            }
+            return(true);
+        }
+    </script>
