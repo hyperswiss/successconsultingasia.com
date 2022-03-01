@@ -1,16 +1,15 @@
 //Variables screen size
 $SM:740px
-$L:1000px    
+$L:1200px    
 
 //Variables fonts and size
-$navfont-color:rgba(0, 129, 133, 100)
-$navshadow: 2px 2px white
+$navfont-color: brown
 $bodyfontsize-xl:20px
 $bodyfontsize-n:16px
 $bodyfontsize-s: 12px
 $body-font-fam: 'Champagne & Limousines', sans-serif
-$bg_color: beige
-$hover-color: rgba(140, 20, 137, 100)
+$bg-color: beige
+$hover-color: #1e2125
 
 //Variables images borders
 $size2: 2px
@@ -36,10 +35,11 @@ p
 
 .navbar-grid
     display: grid
+    overflow: hidden
     grid-template-columns: 1fr 1fr
-    grid-template-rows: 90px
+    grid-template-rows: 78px
     position: relative
-    border-bottom: 4px solid $bg_color
+    border-bottom: 4px solid $bg-color
     @media screen and (max-width: $SM)        
         grid-template-columns: 1fr
         grid-template-rows: 8vh
@@ -58,13 +58,14 @@ p
         background-color: transparent
         border: none
     
-.navigation-bar
+.navbar
     display: grid
-    grid-template-columns: 1fr 1fr 1fr 1fr
-    //grid-template-rows: 85px
-    position: relative
+    background-color: $bg-color
+    overflow: hidden
+    grid-template-columns: repeat(4, 1fr)
     @media screen and (max-width: $SM)
         grid-template-columns: 1fr
+        grid-template-rows: 10vh 10vh 10vh 10vh 35vh 10vh
         height: 100vh
         position: fixed
         z-index: 1
@@ -74,26 +75,85 @@ p
         background-image: url("../img/okeykat-nYGMnyZHR2I-unsplash.webp")
         width: 0
 
-.navigation-bar a
+.navbar-link
     text-decoration: none
-    display: grid
-    font-size: $bodyfontsize-xl
+    align-self: center
     color: $navfont-color
-    text-shadow: $navshadow
+    font-size: $bodyfontsize-xl
     text-align: center
-    padding-top: 1.5em
-    padding-bottom: 1.5em
-    transition-property: background
-    transition-duration: 1s
+    height: 18px
+    padding: 30px 0
+    display: grid
     @media screen and (max-width: $SM)
         text-align: left
-        padding-top: 15px
-        padding-bottom: 0
-        padding-left: 10px
+        padding: 10px
+
+.dropdown .dropbtn
+    text-decoration: none
+    align-self: center
+    color: $navfont-color
+    font-size: $bodyfontsize-xl
+    text-align: center
+    height: 18px
+    padding: 30px 0
+    display: grid
+    background-color: $bg-color
+    border: none
+    outline: none
+    margin: 0
+    width: inherit
+    @media screen and (max-width: $SM)
+        text-align: left
+        padding: 10px
+        background-color: transparent
+
+.navbar-link:hover, .dropdown:hover .dropbtn
+    background-color: black
+    color: white
+
+.dropdown
+    display: grid
+
+.drpcontent
+    box-sizing: border-box
+    display: none
+    position: fixed
+    background-color: $bg-color
+    min-width: 238.5px
+    z-index: 1
+    margin-top: 78px
+    @media screen and (max-width: $SM)
+        background-color: transparent
+
+
+.dropdown-item
+    text-decoration: none
+    align-self: center
+    color: $navfont-color
+    font-size: $bodyfontsize-xl
+    text-align: center
+    display: grid
+    height: 18px
+    padding: 30px 0
+    @media screen and (max-width: $SM)
+        display: block
+        text-align: left
+        margin-left: 50px
+        padding: 10px
+
+.dropdown-item:hover
+    background-color: black
+
+.drpcontent a:hover 
+    color: white
+
+.dropdown:hover .drpcontent
+    display: grid
 
 #contact-link
     @media screen and (max-width: $SM)
-        padding-bottom: 250px
+        grid-row-start: 6
+        grid-row-end: 7
 
 #hamburger
     width: 40px
@@ -107,32 +167,28 @@ p
         font-size: 30px
         text-decoration: none
         margin-right: 30px
+        margin-top: 15px
 
-.drpcontent
-    display: none
-    position: relative
-    min-width: 150px
-    max-width: 230px
-    z-index: 1
+.icons
+    display: grid
+    grid-template-rows: repeat(3, 60px)
+    width: 80px
+    padding: 10px
+    grid-gap: 20px
+    top: 70%
+    position: fixed
     @media screen and (max-width: $SM)
-        display: block
-        margin-left: 20vw
+        display: none
 
-.drpcontent a
-    text-shadow: $navshadow
-
-.navbar-link:hover
-    text-shadow: none
-    background-color: $bg_color
-    color: $navfont-color
-
-.navbar-button:hover
-    text-shadow: none
-    background-color: $bg_color
-    color: $navfont-color
-
-.dropdown:hover .drpcontent
-    display: block
+.icons-footer
+    display: none
+    @media screen and (max-width: $SM)
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        padding: 10px
+        grid-column-gap: 20px
+        justify-items: center
+        margin: 5vh 20vw
 
 h1, h2, h3
     font-family: 'Champagne & Limousines', 'Ubuntu'
@@ -141,14 +197,14 @@ h1, h2, h3
         font-family: 'Blogger Sans','Ubuntu'
 
 h1
-    font-size: 3vw
-    letter-spacing: 4px
+    font-size: 48px
     font-weight: lighter
+    letter-spacing: 4px
     @media screen and (max-width:$SM)
         font-size: 2.5em
 
 h2 
-    font-size: 2vw
+    font-size: 36px
     letter-spacing: 1px
     font-weight: lighter
     @media screen and (max-width:$SM)
@@ -176,8 +232,8 @@ h3
 
 .pictures-section
     background: #4682b4
-    padding-top: 5vh
-    padding-bottom: 5vh
+    padding-top: 15vh
+    padding-bottom: 15vh
     @media screen and (max-width: $SM)
         padding: 5vh 0
 
@@ -227,6 +283,13 @@ footer
     margin-top: 2vh
     @media screen and (max-width: $SM)
         grid-template-columns: 1fr
+
+.links a
+    text-decoration: none
+    color: white
+    text-decoration: underline
+    text-decoration-color: green
+    text-decoration-thickness: 5px
 
 #khreativ-title a
     text-decoration: underline

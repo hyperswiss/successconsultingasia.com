@@ -17,8 +17,7 @@ body {
 .grid-box {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  margin: 2em 0 0 0; }
+  justify-items: center; }
   @media screen and (max-width: 740px) {
     .grid-box {
       grid-template-columns: 1fr;
@@ -32,10 +31,18 @@ body {
   margin: 2em 0 0 0; }
 
 .card {
-  width: 27vw; }
+  border: 0.25px solid grey;
+  border-radius: 5px;
+  width: 24vw;
+  padding: 2em;
+  margin: 1em; }
   @media screen and (max-width: 740px) {
     .card {
-      width: 80vw; } }
+      width: 70vw; } }
+
+.card-even {
+  background-color: rgba(250, 250, 250, 0.7);
+  color: black; }
 
 .card-odd {
   background-color: rgba(0, 0, 0, 0.7);
@@ -52,45 +59,59 @@ body {
 
 .card-img-top {
   position: relative;
-  height: 3px; }
+  height: 3px;
+  width: 100%;
+  display: grid; }
 
 .loner {
   justify-items: center;
   margin-top: 2em;
   display: grid; }
 
-.people-flex {
+.container {
   display: block;
   margin: 2vh 20em; }
   @media screen and (max-width: 740px) {
-    .people-flex {
+    .container {
       display: block;
       margin: 0 5vw; } }
 
-.people-content {
+.row-1 {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  background-color: aqua; }
+  grid-template-columns: 3fr 1fr;
+  height: 2em; }
 
-.people h2 {
+.row-2 {
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; }
+
+.row-3 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  height: 5em; }
+
+.row-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr; }
+
+.col h2 {
   margin: 4vh 0; }
 
-.people-img {
+.col img {
+  margin-top: 2em;
   display: grid;
-  width: 6vw;
-  background-color: teal; }
+  width: 200px;
+  height: 250px; }
   @media screen and (max-width: 740px) {
-    .people-img {
+    .col img {
       min-width: 80px; } }
 
-.people-text p {
-  display: grid;
-  padding: 0 2em 0 2em; }
+.col p {
+  padding: 0.5em; }
 
-.space {
-  width: 30vw;
-  height: 20vh;
-  background-color: green; }
+#space {
+  height: 20vh; }
 
 .contact_section {
   background: #4682b4;
@@ -104,7 +125,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 0em 15em 7em 10em; }
-  @media screen and (max-width: 740px) {
+  @media screen and (max-width: 1200px) {
     .grid_contact {
       font-size: 16px;
       grid-template-columns: 1fr;
@@ -113,30 +134,60 @@ body {
 
 .grid_form {
   display: grid;
+  margin: 16px 3vw;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto; }
+  @media screen and (max-width: 740px) {
+    .grid_form {
+      grid-template-columns: 1fr;
+      max-width: 350px; } }
 
 .grid_form > label {
   text-align: right; }
 
-.grid_form > label, input, textarea {
-  margin: 5px; }
-
-.grid_form > input, textarea {
-  border-radius: 5px; }
-
-#last_name span {
-  display: inline; }
+.grid_form > label, input {
+  margin: 5px;
+  width: 30vw;
+  height: 4vh;
+  font-size: 20px; }
   @media screen and (max-width: 740px) {
-    #last_name span {
+    .grid_form > label, input {
+      max-width: 330px;
+      width: 100vw; } }
+
+.form-group > input, textarea {
+  margin: 5px;
+  border: 0.25px solid gray;
+  min-height: 35px;
+  border-radius: 5px;
+  font-size: 20px; }
+
+.timestamp {
+  display: none; }
+
+.email span {
+  display: inline; }
+  @media screen and (max-width: 1500px) {
+    .email span {
       display: block; } }
 
 textarea {
-  height: 10vh;
+  width: 30vw;
+  height: 20vh;
   overflow: scroll; }
+  @media screen and (max-width: 740px) {
+    textarea {
+      max-width: 330px;
+      width: 100vw; } }
+
+.btn-cont {
+  padding: 1vh 6vw; }
+  @media screen and (max-width: 740px) {
+    .btn-cont {
+      padding: 2px; } }
 
 .email[href^="mailto"]::before {
-  content: url("img/at-solid.svg"); }
+  content: url("../img/at-solid.svg"); }
 
 .email {
   color: white; }
@@ -151,31 +202,52 @@ textarea {
 .btn_container button {
   margin-top: 40px; }
 
-.submit_button {
+.btn {
   border: 0px;
+  margin: 5px;
   line-height: 2.5;
-  padding: 0px 50px;
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
-  color: #008185;
-  border-radius: 5px; }
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  width: 150px; }
   @media screen and (max-width: 740px) {
-    .submit_button {
+    .btn {
       margin-top: 1em;
       line-height: 2; } }
 
-.submit_button:hover {
-  color: #8c1489;
+button:hover {
+  background-color: #ffdf00;
+  color: black;
+  outline: 3px dashed grey;
   cursor: pointer; }
 
 .submit_button:active {
   box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6); }
 
 .grid_countries {
-  margin: 1em 3vw;
+  margin: 16px 3vw;
   display: grid;
-  align-items: center;
   justify-items: center; }
+  @media screen and (max-width: 740px) {
+    .grid_countries {
+      max-width: 350px;
+      width: 100vw; } }
+
+.card-countries {
+  border: 0.25px solid grey;
+  border-radius: 5px;
+  width: 24vw;
+  height: max-content;
+  padding: 2em;
+  margin: 1em; }
+  @media screen and (max-width: 740px) {
+    .card-countries {
+      width: 100vw;
+      max-width: 270px;
+      margin: 0;
+      padding: 2em; } }
 
 .countries {
   font-size: 16px; }
@@ -191,12 +263,17 @@ textarea {
 #email-sent {
   margin: 15vh 0 25vh 0; }
 
-.blue {
-  height: 200px;
-  background-color: blue; }
+.email-details {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: beige;
+  border: 0.5px solid gray;
+  border-radius: 5px;
+  margin: 0 20vw;
+  padding-left: 5vw;
+  overflow: scroll; }
 
-.red {
-  height: 200px;
-  background-color: red; }
+.label h2, .details h2 {
+  text-align: left; }
 
 /*# sourceMappingURL=subpages.css.map */
