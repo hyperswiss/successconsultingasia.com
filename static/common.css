@@ -1,0 +1,304 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Liberation Mono", Ubuntu;
+  font-size: 16px;
+  box-sizing: border-box; }
+
+p {
+  text-align: center; }
+  @media screen and (max-width: 740px) {
+    p {
+      font-size: 12px; } }
+
+.content {
+  position: relative; }
+
+.navbar-grid {
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 78px;
+  position: relative;
+  border-bottom: 4px solid beige; }
+  @media screen and (max-width: 740px) {
+    .navbar-grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: 8vh; } }
+
+@media screen and (max-width: 740px) {
+  .pre-navbar {
+    display: none; } }
+
+.openbtn {
+  display: none; }
+  @media screen and (max-width: 740px) {
+    .openbtn {
+      display: block;
+      width: 40px;
+      height: 40px;
+      margin-left: 80vw;
+      background-color: transparent;
+      border: none; } }
+
+.navbar {
+  display: grid;
+  background-color: beige;
+  overflow: hidden;
+  grid-template-columns: repeat(4, 1fr); }
+  @media screen and (max-width: 740px) {
+    .navbar {
+      grid-template-columns: 1fr;
+      grid-template-rows: 10vh 10vh 10vh 10vh 35vh 10vh;
+      height: 100vh;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      overflow-x: hidden;
+      background-image: url("../img/okeykat-nYGMnyZHR2I-unsplash.webp");
+      width: 0; } }
+
+.navbar-link {
+  text-decoration: none;
+  align-self: center;
+  color: brown;
+  font-size: 20px;
+  text-align: center;
+  height: 18px;
+  padding: 30px 0;
+  display: grid; }
+  @media screen and (max-width: 740px) {
+    .navbar-link {
+      text-align: left;
+      padding: 10px; } }
+
+.dropdown .dropbtn {
+  text-decoration: none;
+  align-self: center;
+  color: brown;
+  font-size: 20px;
+  text-align: center;
+  height: 18px;
+  padding: 30px 0;
+  display: grid;
+  background-color: beige;
+  border: none;
+  outline: none;
+  margin: 0;
+  width: inherit; }
+  @media screen and (max-width: 740px) {
+    .dropdown .dropbtn {
+      text-align: left;
+      padding: 10px;
+      background-color: transparent; } }
+
+.navbar-link:hover, .dropdown:hover .dropbtn {
+  background-color: black;
+  color: white; }
+
+.dropdown {
+  display: grid; }
+
+.drpcontent {
+  box-sizing: border-box;
+  display: none;
+  position: fixed;
+  background-color: beige;
+  min-width: 238.5px;
+  z-index: 1;
+  margin-top: 78px; }
+  @media screen and (max-width: 740px) {
+    .drpcontent {
+      background-color: transparent; } }
+
+.dropdown-item {
+  text-decoration: none;
+  align-self: center;
+  color: brown;
+  font-size: 20px;
+  text-align: center;
+  display: grid;
+  height: 18px;
+  padding: 30px 0; }
+  @media screen and (max-width: 740px) {
+    .dropdown-item {
+      display: block;
+      text-align: left;
+      margin-left: 50px;
+      padding: 10px; } }
+
+.dropdown-item:hover {
+  background-color: black; }
+
+.drpcontent a:hover {
+  color: white; }
+
+.dropdown:hover .drpcontent {
+  display: grid; }
+
+@media screen and (max-width: 740px) {
+  #contact-link {
+    grid-row-start: 6;
+    grid-row-end: 7; } }
+
+#hamburger {
+  width: 40px;
+  height: 40px; }
+
+#closebtn {
+  display: none; }
+  @media screen and (max-width: 740px) {
+    #closebtn {
+      display: block;
+      justify-self: end;
+      font-size: 30px;
+      text-decoration: none;
+      margin-right: 30px;
+      margin-top: 15px; } }
+
+.icons {
+  display: grid;
+  grid-template-rows: repeat(3, 60px);
+  width: 80px;
+  padding: 10px;
+  grid-gap: 20px;
+  top: 70%;
+  position: fixed; }
+  @media screen and (max-width: 740px) {
+    .icons {
+      display: none; } }
+
+.icons-footer {
+  display: none; }
+  @media screen and (max-width: 740px) {
+    .icons-footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 10px;
+      grid-column-gap: 20px;
+      justify-items: center;
+      margin: 5vh 20vw; } }
+
+h1, h2, h3 {
+  font-family: "Champagne & Limousines", "Ubuntu";
+  text-align: center; }
+  @media screen and (max-width: 740px) {
+    h1, h2, h3 {
+      font-family: "Blogger Sans", "Ubuntu"; } }
+
+h1 {
+  font-size: 48px;
+  font-weight: lighter;
+  letter-spacing: 4px; }
+  @media screen and (max-width: 740px) {
+    h1 {
+      font-size: 2.5em; } }
+
+h2 {
+  font-size: 36px;
+  letter-spacing: 1px;
+  font-weight: lighter; }
+  @media screen and (max-width: 740px) {
+    h2 {
+      font-size: 1.5em; } }
+
+h3 {
+  font-size: 1.7vw;
+  text-align: left;
+  font-weight: lighter; }
+
+.cont {
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-bottom: 3vh; }
+  @media screen and (max-width: 740px) {
+    .cont {
+      margin-bottom: 0px; } }
+
+.cont h1 {
+  margin-top: 2vh; }
+  @media screen and (max-width: 740px) {
+    .cont h1 {
+      margin: 4vh 0; } }
+
+#icon-arrow-down {
+  margin-top: 3vh; }
+
+.pictures-section {
+  background: #4682b4;
+  padding-top: 15vh;
+  padding-bottom: 15vh; }
+  @media screen and (max-width: 740px) {
+    .pictures-section {
+      padding: 5vh 0; } }
+
+.grid_pictures {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5%;
+  margin: 0 15vw; }
+  @media screen and (max-width: 740px) {
+    .grid_pictures {
+      font-size: 16px;
+      grid-template-columns: 1fr;
+      grid-gap: 1vh;
+      margin: 0 12vw 0 10vw; } }
+
+.pics img {
+  display: grid;
+  width: 289px;
+  transform: rotate(4deg); }
+  @media screen and (max-width: 740px) {
+    .pics img {
+      width: 100%; } }
+
+.flex-box {
+  margin-bottom: 5vh;
+  margin-top: 5vh; }
+
+footer {
+  display: flex;
+  justify-items: center;
+  background: #3c204f;
+  color: white;
+  padding: 1vh 0 0 0;
+  margin: 0px; }
+  @media screen and (max-width: 740px) {
+    footer {
+      display: block;
+      padding: 5vh 0; } }
+
+.khreativ {
+  flex: 1; }
+
+.credits {
+  flex: 2;
+  margin: 0 5vw; }
+
+.links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 2vh; }
+  @media screen and (max-width: 740px) {
+    .links {
+      grid-template-columns: 1fr; } }
+
+.links a {
+  text-decoration: none;
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: green;
+  text-decoration-thickness: 5px; }
+
+#khreativ-title a {
+  text-decoration: underline;
+  text-decoration-thickness: 10px;
+  text-decoration-color: green;
+  color: white;
+  font-size: 24px; }
+
+.khreativ p {
+  font-size: 16px; }
+
+/*# sourceMappingURL=common.css.map */
