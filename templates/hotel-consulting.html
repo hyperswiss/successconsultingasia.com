@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    {% block title %}<title>Hotel Consulting</title>{% endblock title %}
+
+</head>
+<body>
+    {% block consulting %}
+    <section id="first-page">
+        <div class="wrapper">
+                <div class="content">
+                <header>
+                </header>
+                <div class="cont">   
+                    <img src="{% static 'img/SCS logo.pn' %}g" class="logo-top" alt="logo">
+                    <h1>Sales & Marketing</h1>
+                </div>
+                </div>
+        </div>
+    <section class="detail" id="detail_sales">
+        <div class="grid-box">
+            <div class="card h-100 card-odd">
+                <div class="card-body card-body-odd">
+                    <img src="{% static 'img/rect843.png' %}" class="card-img-top" alt="decoration">
+                    <h2>Marketing Plan</h2>
+                    <p>A yearly plan defining all your marketing activities. Online, Social Media, promotions, special days or periods, fairs and trade, advertising campaigns, etc&hellip; This plan has to be thorough and accurate, budgeting will need this plan to be more precise.</p>
+                </div>
+            </div>
+            <div class="card h-100 card-even">
+                <div class="card-body card-body-even">
+                    <img src="{% static 'img/rect843.png' %}" class="card-img-top" alt="decoration">
+                    <h2>Strategies</h2>
+                    <p>Define your strategies and setup your measurement tools. How do you want to look compared to your competitors ? Within which price range ? Are you gonna be higher because your product is better and you think you can lead the pack ? Or do you prefer to skim the most possible guests even if they pay less ? </p>
+                    <p>All strategies are valid, but they must be thought before they are implemented, and behind each and everyone of them, there must be a reflection and a reason for it.</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid-box">
+            <div class="card h-100 card-even">
+                <div class="card-body">
+                    <img src="{% static 'img/rect843.png' %}" class="card-img-top" alt="decoration">
+                    <h2>Social medias</h2>
+                    <p>Have your social medias handled. Your social medias profile must be updated regularly, it&#39;s not much of whether there&#39;s something to say or not, but there must be something published. If yotheu don&#39;t occupy the place, someone else will.</p>
+                </div>
+            </div>
+            <div class="card h-100 card-odd">
+                <div class="card-body">
+                    <img src="{% static 'img/rect843.png' %}" class="card-img-top" alt="decoration">
+                    <h2>SEO advertising campaigns</h2>
+                    <p>Fully equipped in term of technology, we can put in place your ads campaign for Google Ads, Facebook and so on. They&#39;ll be setup based on keywords linked to your business and will regularly be updated and monitored.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h1>Technology</h1>
+    </section>
+        <section class="detail" id="detail_tech">
+        <div class="grid-box">
+            <div class="card h-100 card-odd">
+                <div class="card-body card-body">
+                    <img src="{% static 'img/rect843.png' %}" class="card-img-top" alt="decoration">
+                    <h2>Distribution Channels</h2>
+                    <p>You have choice either to have a Channel Manager which will handle your availability in a set of distribution channels (booking.com, agoda, expedia, &hellip;) in real time. Or you or your staff do it. If you go for the second solution, it requires more attention, if the sales are still open on one channel on a day where the hotel or one category of rooms is already full occupied, you will end up with some overbooking. It might sometime be difficult to handle and can lead to the kind of reviews nobody wants.</p>
+                </div>
+            </div>
+            <div class="card h-100 card-even">
+                <div class="card-body">
+                    <img src="{% static 'img/rect843.png' %}" class="card-img-top" alt="decoration">
+                    <h2>Website development</h2>
+                    <p>We are fully trained and able to come up with long term solutions for your website. Not through a website builder, but with real coding, each and every line of code being doing something, and having written those lines helps to fix in case of problem.</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid-double" id="double">
+            <div class="card h-100 card-even" style="width: 60em">
+                <div class="card-body card-body-odd">
+                    <img src="{% static 'img/rect843.png' %}" class="card-img-top" alt="decoration">
+                    <h2>Software</h2>
+                    <p>Nowadays there are on the market so many software solutions available to help you run your property, that the first difficulty is to select the right one. Knowing most of them for having worked with some, or discussed with colleagues who have worked with others, we can give you a valuable advice on which one would best suit your needs.</p>
+                    <h3>Property Management System (PMS)</h3>
+                    <p>A key software to run a property efficiently. It basically gives you an oversight of all your property&#39;s assets, rooms, finances, and so on. Some are going deep into detail, some are more focusing on certain parts. What all do is to plan your occupancy in term of rooms, room categories, booking channel, payment, etc.</p>
+                    <p>Each and every PMS has its Pros and Cons, let us help you decide which one to choose.</p>
+                    <h3>POS</h3>
+                    <p>A very efficient tool to know what happen in your F&amp;B department. Which items are selling most, which items are low on demand, what has to be changed and replaced, what has to be kept. It&#39;s not anymore basing your future decisions on someone&#39;s feelings but no proper proof, <strong><em>&ldquo;ask 5 employees what you sell most, and you&#39;ll get 5 different answers&rdquo;</em></strong>, but on hard reliable figures.</p>
+                    <h3>Accounting system</h3>
+                    <p>Both POS and PMS have to be linked to a compatible accounting system. This factor has to be taken into account when selecting the software for your company.</p>
+                </div>
+            </div>
+        </div>
+        <div class="loner">
+            <div class="card h-100 card-odd">
+                <div class="card-body">
+                    <img src="{% static 'img/rect843.png' %}" class="card-img-top" alt="decoration">
+                    <h2>Internet Security</h2>
+                    <p>It&#39;s important to know good solutions in term of security, it&#39;s not fun to be hacked and there are ways to prevent against it. Nobody likes the idea that someone, one day could look into his systems and get money redirect from your customer to some hacker. Let&#39;s work that out and prevent from any type of fraud.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock consulting %}
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include 'head.html' %}
+
+    {% block title %}<title>Revenue Management</title>{% endblock title %}
+
+</head>
+<body>
+    {% block finances %}
+    <section id="first-page">
+        <div class="wrapper">
+                <div class="content">
+                <header>
+                </header>
+                <div class="cont">   
+                    <img src="{% static 'img/SCS logo.pn' %}g" class="logo-top" alt="logo">
+                    <h1>Finances Management</h1>
+                </div>
+                </div>
+        </div>
+    </section>
+    <section class="detail" id="detail_finances">
+        <div class="grid-box">
+            <div class="card h-100 card-odd">
+                <div class="card-body card-body-odd">
+                    <img src="{% static 'img/rect843.png' %}" class="card-img-top" alt="decoration">
+                    <h2>Business Plan</h2>
+                    <p>Complete Business Plan adapted to your situation. It contains an Executive Summary, Mission Statement, External and Internal Analysis, SWOT analysis, Strategies, Marketing Plan, and Finances. It’s the most complete document, a necessity for every business who wants to be successful.</p>
+                </div>
+            </div>
+            <div class="card h-100 card-even">
+                <div class="card-body card-body-even">
+                    <img src="{% static 'img/rect843.png' %}" class="card-img-top" alt="decoration">
+                    <h2>Budget</h2>
+                    <p>One of the most important document in running a business, budget will set your targets, define your needs in term of income, level your expenses, reflect your marketing strategy. Personally, I&#39;ve always wondered how some business could run without it, and have any control on their operations. Budget is your rudder, your steering wheel, you can&#39;t possibly go in any direction without it.</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid-box">
+            <div class="card h-100 card-even">
+                <div class="card-body">
+                    <img src="{% static 'img/rect843.png' %}" class="card-img-top" alt="decoration">
+                    <h2>Finance Department Assessment</h2>
+                    <p>Thorough review of the Finance Department and their procedures. In case it would be necessary we’ll advise you on the necessary changes and steps, which will help you run your business more efficiently</p>
+                </div>
+            </div>
+            <div class="card h-100 card-odd">
+                <div class="card-body">
+                    <img src="{% static 'img/rect843.png' %}" class="card-img-top" alt="decoration">
+                    <h2>Price Structure</h2>
+                    <p>A very powerful tool if implemented correctly. A good price structure paired with an effective Revenue Management will help you to keep your results inline and increase your sales compared to your competition.</p>                        
+                </div>
+            </div>
+    </div>
+    <div class="grid-box">
+            <div class="card h-100 card-odd">
+                <div class="card-body">
+                    <img src="{% static 'img/rect843.png' %}" class="card-img-top" alt="decoration">
+                    <h2>Feasibility Study</h2>
+                    <p>A pre study, Feasibility Study will help you decide if it is economically viable to run the kind of concept you want to create, in its specific environment.</p>
+                </div>
+            </div>
+            <div class="card h-100 card-even">
+                <div class="card-body">
+                    <img src="{% static 'img/rect843.png' %}" class="card-img-top" alt="decoration">
+                    <h2>Revenue Management</h2>
+                    <p>A complicated concept, but the idea is very simple. You create a layer of revenue covering your basic expenses and sell this product through a particular distribution channel with a low price. Once you have your basic needs covered, you set-up the rest of your channels to a more revenue generating layer. That&#39;s where you will setup your strategies toward the competition, that&#39;s where you will have your profit coming from.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock finances %}
+
+</body>
+</html>

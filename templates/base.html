@@ -1,0 +1,53 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include 'head.html' %}
+
+    {% block title %}<title>Success Consulting Services</title>{% endblock title %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+
+</head>
+
+<body> 
+    {% include 'navbar.html' %}
+
+    {% block content %} {% endblock content %}
+
+    {% block finances %} {% endblock finances %}
+
+    {% block consulting %} {% endblock consulting %}
+
+    {% block projects %} {% endblock projects %}
+
+    {% include 'gallery.html' %}
+
+    {% include 'footer.html' %}
+    
+</body>
+
+    <button onclick="topFunction()" id="myBtn">Back to top</button>
+    <script>
+        mybutton = document.getElementById("myBtn");
+    
+        window.onscroll = function() {scrollFunction()};
+    
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display ="none";
+            }
+        }
+    
+        function topFunction() {
+            document.body.scrollTop = 0 ;
+            document.documentElement.scrollTop = 0 ;
+        }
+    </script>
+
+</html>
