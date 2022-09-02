@@ -1,8 +1,15 @@
+<?php
 
+if( (count($_POST) > 0) and (!isset($_POST["noway"])) and $_POST["noway"] != "4" ){ exit; }
+
+?>
 
     <div class="grid_contact">
         <div class="grid_form">
-            <form action="process.php" id="myform" name="contact_form" onsubmit="return validateForm()" method="post" role="form">
+            <form action="process.php" id="myform" name="contact_form" onsubmit="validateForm()" method="post" role="form">
+                <div class="from-group">
+                    <input type="hidden" name="noway" value="25">
+                </div>
         		<div class="form-group">
     				<input type="text" class="form-control" name="fname" pattern="[A-Za-z,-]+" placeholder="First Name" required autofocus>
     			</div>
@@ -31,16 +38,16 @@
         <div class="grid_countries">
             <div class="card-countries">
                 <div class="card-body">
-                    <img src="../img/rect843.png" class="card-img-top" alt="...">
+                    <img src="../static/img/rect843.png" class="card-img-top" alt="decoration">
                     <div class="countries">
                         <p><strong>Thailand - Myanmar</strong></p>
                         <p><a class="email" href="mailto:thailand.admin@successconsultingasia.com"><span>thailand.admin@</span><span>successconsultingasia.com</span></a></p>
-                        <p><img class="icon" src="../img/phone-solid.svg" alt="phone"> +66 901 625 166</p>
+                        <p><img class="icon" src="../static/img/phone-solid.svg" alt="phone"> +66 901 625 166</p>
                     </div>
                     <div class="countries">
                         <p><strong>Cambodia - Vietnam</strong></p>
                         <p><a class="email" href="mailto:cambodia.admin@successconsultingasia.com"><span>cambodia.admin@</span><span>successconsultingasia.com</span></a></p>
-                        <p><img class="icon" src="../img/phone-solid.svg" alt="phone"> +855 17 573 494</p>
+                        <p><img class="icon" src="../static/img/phone-solid.svg" alt="phone"> +855 17 573 494</p>
                     </div>
                 </div>
             </div>
@@ -80,4 +87,11 @@
             }
             return(true);
         }
-    </script>
+    var formname = "contact_form";
+    var fieldname = "noway";
+    var finalvalue = "4";
+    var soft_sell = "document.";
+    soft_sell += formname;
+    soft_sell += "." + fieldname + ".va";
+    eval(soft_sell + "lue='"+finalvalue+"'");
+</script>

@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    {% block title %}<title>Projects Development</title>{% endblock title %}
+
+</head>
+<body>
+    {% block projects %}
+    <section id="first-page">
+        <div class="wrapper">
+            <div class="content">
+                <div class="cont">   
+                    <img src="{% static 'img/SCS logo.png' %}" class="logo-top" alt="logo">
+                    <h1>Projects Development</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="detail" id="detail_sales">
+        <div class="skew-grid">
+            <div class="skew-grid-item">
+                <div class="media">
+                    <img src="{% static 'img/placeholder.jpg' %}" class="media-img" alt="decoration">
+                    <div class="media-content">
+                        <h2>Concept</h2>
+                        <p>We help you to define and setup the concepts which will fit to your product</p>
+                    </div>
+                </div>
+            </div>
+            <div class="skew-grid-item">
+                <div class="media">
+                    <img src="{% static 'img/placeholder.jpg' %}" class="media-img" alt="decoration">
+                    <div class="media-content">
+                        <h2>Design</h2>
+                        <p>Get the proper design for your property, and have your visitors enjoy the ultimate hospitality experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <h1>Human Resources</h1>
+        <div class="skew-grid">
+            <div class="skew-grid-item">
+                <div class="media">
+                    <img src="{% static 'img/placeholder.jpg' %}" class="media-img" alt="decoration">
+                    <div class="media-content">
+                        <h2>Headcount</h2>
+                        <p>The right number of employees at the right place at the right time has always been a headache in an industry where you barely know in advance how many customers will show.</p>
+                        <p>There&#39;s a way to limit this headache, we have this knowledge and will happily work that out for you.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="skew-grid-item">
+                <div class="media">
+                    <img src="{% static 'img/placeholder.jpg' %}" class="media-img" alt="decoration">
+                    <div class="media-content">
+                        <h2>Salary grid</h2>
+                        <p>Salary grid is the document which defines how much every level of staff should be paid compared to the upper and lower levels. Employees salaries is something very sensitive. To avoid to create tensions among them (which would always reflect to the customer in the end), a salary grid which makes sense is the perfect tool. Once an employee reaches the highest possible salary at his level, it would be time to consider him/her for a promotion.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="skew-grid">
+            <div class="skew-grid-item">
+                <div class="media">
+                    <img src="{% static 'img/placeholder.jpg' %}" class="media-img" alt="decoration">
+                    <div class="media-content">
+                        <h2>Training</h2>
+                        <p>Training is one of the most important part of the daily job of a hotelier. Making sure that every employee knows the procedures and standards, so that they feel confident enough</p>
+                    </div>
+                </div>
+            </div>
+            <div class="skew-grid-item">
+                <div class="media">
+                    <img src="{% static 'img/placeholder.jpg' %}" class="media-img" alt="decoration">
+                    <div class="media-content">
+                        <h2>Evaluation forms</h2>
+                        <p>As everything which implies changes, it must be based on a hard-written policy known from everybody, as such as there will be no surprise.</p>
+                        <p>That&#39;s what an evaluation form is. The document which measures how employees are doing in the company and if they fit in or not. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock projects %}
+
+
+</body>
+</html>

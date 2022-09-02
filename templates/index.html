@@ -1,48 +1,28 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="apple-touch-icon" sizes="57x57" href="../img/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="../img/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="../img/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="../img/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="../img/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon-96x96.png">
-    <link rel="manifest" href="../img/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <title>SCS Consulting Services</title>
-    <meta name="description" content="Asia hospitality consultants">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../static/common.css">
-    <link rel="stylesheet" href="../static/index.css">
-</head>
 <body>
-    <section>
-        <div class="wrapper">
-            <img class="bg-image" src="../img/pillow.webp" alt="hotel-room">
-            <img class="bg-image-small" src="../img/pillow-small.webp" alt="hotel-room">
-                <div class="content">
-                <header>
-                    <?php include 'navbar.html'; ?>
-                </header>
-                <div class="cont">   
-                    <img id="logo" src="../img/SCS logo.png" alt="Logo">
-                        <h1>Success Consulting Services</h1>
-                        <h2>Hospitality Consultants</h2>
-                        <p>SCS assists you with in all kind of Hotel and Restaurant projects.</p>
-                        <p>We help you with your Financial Activities, Price Structure, Training,<br>Sales & Marketing, Concepts & Design and IT solutions.</p>
-                        <p><img id="icon-arrow-down" src="../img/arrow-down.svg"></p>
+    {% block content %}
+    <section class="intro">
+        <div class="bg-cont">
+            <img class="bg-image" src="{% static 'img/hotel-light.webp' %}" alt="hotel-room">
+            <img class="bg-image-small" src="{% static 'img/hotel-light-small.webp' %}" alt="hotel-room">
+        </div>
+        <div class="intro-cont">
+            <img id="logo" src="{% static 'img/SCS logo.png' %}" alt="Logo">
+                <div class="header-cont">
+                    <p class="heading">Success Consulting Services</p>
+                    <h2 class="main-h2">Hospitality Consultants</h2>
+                    <p class="main-h2">SCS assists you with in all kind of Hotel and Restaurant projects.</p>
+                    <p>We help you with your Financial Activities, Price Structure, Training,<br>Sales & Marketing, Concepts & Design and IT solutions.</p>
                 </div>
+                <div class="btn-container">
+                    <a id="btn-quote" href="contact.php">Get your free assessment !</a>
                 </div>
         </div>
     </section>
@@ -50,95 +30,128 @@
     <section class="services" id="services">
         <h1>Services</h1>
         <div class="grid_services">
-            <div class="box-number" id="box1">
-                <img src="../img/usd.webp" alt="background-image">
+            <div class="box" id="box2"><h2>Operations Management</h2>
                 <div id="grad1"></div>
                 <div id="grad2"></div>
-            </div>
-            <div class="box" id="box2"><h2>financial</h2>
-                <p>Business Plan</p>
-                <p>Feasibility Study</p>
-                <p>Price Structure</p>
-                <p>Budgets</p>
-                <p>Revenue Analysis</p>
+                <p>Let us assist you with improving your complete operations or with a specific department and get your operation more successful</p>
                 <div id="grad3"></div>
                 <div id="grad4"></div>
             </div>
-            <div class="box-number" id="box3">
-                <img src="../img/room.webp" alt="background-image">
+            <div class="box" id="box4"><h2>Sales & Marketing</h2>
                 <div id="grad1"></div>
                 <div id="grad2"></div>
-            </div>
-            <div class="box" id="box4"><h2><span>human</span><span> resources</span></h2>
-                <p>Training</p>
-                <p>Headcount</p>
-                <p>Evaluation Forms</p>
-                <p>Standard Operating Procedures</p>
-                <p>Salary Grid</p>
+                <p>Let our Marketing Professionals take care of your Social Marketing campaigns, your Social media presence, the extremely SEO for your online presence.</p>
                 <div id="grad3"></div>
                 <div id="grad4"></div>
             </div>
-            <div class="box-number" id="box5">
-                <img src="../img/hotel-keys.webp" alt="background-image">                
+            <div class="box" id="box6"><h2>Executive Search</h2>
                 <div id="grad1"></div>
                 <div id="grad2"></div>
-            </div>
-            <div class="box" id="box6"><h2><span>sales</span><span> & marketing</span></h2>
-                <p>Marketing plans</p>
-                <p>Strategy</p>
-                <p>Promotions</p>
-                <p>Revenue Management</p>
-                <p>Social Medias</p>
+                <p>Let us search for the right person with the right fit on Executive level for your organization. Our recruiters have been Hotel Managers, General Managers, Managing Directors and know by experience how to find the talent needed best suited for your needs.</p>
                 <div id="grad3"></div>
                 <div id="grad4"></div>
             </div>
-            <div class="box-number" id="box7">
-                <img src="../img/hotel-banner.webp" alt="background-image">
+            <div class="box" id="box8"><h2><span>Revenue Management</h2>
                 <div id="grad1"></div>
                 <div id="grad2"></div>
-            </div>
-            <div class="box" id="box8"><h2><span>concepts</span><span> & designs</span></h2>
-                <p>F&B Concepts</p>
-                <p>Rooms Designs</p>
-                <p>In-room Services</p>
-                <p>Menus Design</p>
+                <p>Let us take the complex, time-consuming, and precise work of your rate settings and yielding out of your hands so your Management can focus on the operations part of your organization</p>
                 <div id="grad3"></div>
                 <div id="grad4"></div>
             </div>
-            <div class="box-number" id="box9">
-                <img src="../img/handshake.webp" alt="background-image">
+            <div class="box" id="box10"><h2>Human Resources</h2>
                 <div id="grad1"></div>
                 <div id="grad2"></div>
+                <p>We have an extended database with experienced and trained line staff, for that needed event as well as for long term placement.</p>
+                <div id="grad3"></div>
+                <div id="grad4"></div>
             </div>
-            <div class="box" id="box10"><h2>technology</h2>
-                <p>Software Advising</p>
-                <p>Website Design</p>
-                <p>Online Security</p>
+            <div class="box" id="box12"><h2>Financial Services</h2>
+                <div id="grad1"></div>
+                <div id="grad2"></div>
+                <p>Our hospitality finance experts offer you professional Financial and Accounting Services varying from partly procedures up to complete audits.</p>
+                <div id="grad3"></div>
+                <div id="grad4"></div>
+            </div>
+            <div class="box" id="box14"><h2>Interim Services</h2>
+                <div id="grad1"></div>
+                <div id="grad2"></div>
+                <p>Hire our Management services for a specific time frame according to your needs.</p>
+                <div id="grad3"></div>
+                <div id="grad4"></div>
+            </div>
+            <div class="box" id="box16"><h2>IT Solutions</h2>
+                <div id="grad1"></div>
+                <div id="grad2"></div>
+                <p>Our experts can advise you on all your needs in IT, from software to hardware, including specialized hotel solutions.</p>
+                <div id="grad3"></div>
+                <div id="grad4"></div>
+            </div>
+            <div class="box" id="box18"><h2>Web Development</h2>
+                <div id="grad1"></div>
+                <div id="grad2"></div>
+                <p>Present locally and easily available, we are the ideal partner for your web development needs.</p>
+                <div id="grad3"></div>
+                <div id="grad4"></div>
+            </div>
+              <div class="box" id="box18"><h2>Internet Security</h2>
+                <div id="grad1"></div>
+                <div id="grad2"></div>
+                <p>Our experts can guarantee a total protection on your IT systems</p>
                 <div id="grad3"></div>
                 <div id="grad4"></div>
             </div>
         </div>
     </section>
 
-    <button onclick="topFunction()" id="myBtn">Back to top</button>
-    <script>
-        mybutton = document.getElementById("myBtn");
-    
-        window.onscroll = function() {scrollFunction()};
-    
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display ="none";
-            }
-        }
-    
-        function topFunction() {
-            document.body.scrollTop = 0 ;
-            document.documentElement.scrollTop = 0 ;
-        }
-    </script>
+    <div class="btn-container">
+        <a id="btn-quote" href="contact.php">Get your free assessment !</a>
+    </div>
+
+    <section class="how">
+        <h2>How does it work ?</h2>
+        <div class="grid-how">
+            <div class="grid-how-img">
+                <img src="{% static 'img/reshot-icon-finance.png' %}">
+            </div>
+            <div class="grid-how-text">
+                <h3>1. Get an assessment</h3>
+                <p>It always start with an evaluation of the perfomances of your property, procedures, staff, and many others parameters. We then, generate a report with the Pros and Cons and what can be ameliorated to achieve the <strong>best productivity</strong> and results</p>
+            </div>
+            <div class="grid-how-text">
+                <h3>2. Planning strategies</h3>
+                <p>Based on the <strong>initial assessment</strong>, our expert will advise you on the strategies to put in place, to achieve your goals. Taking into account every aspect of the administration of a hotel, from staff management to the way in which bookings are made, along with revenue Management, marketing strategies and the positioning of the hotel in the market</p>
+            </div>
+            <div class="grid-how-img">
+                <img src="{% static 'img/reshot-icon-creativity.png' %}">
+            </div>
+            <div class="grid-how-img">
+                <img src="{% static 'img/reshot-icon-presentation.png' %}">
+            </div>
+            <div class="grid-how-text">
+                <h3>3. Implement changes</h3>
+                <p>Having established the course of action, it is necessary to ensure that each of the components involved in the operations of your hotel or tourist establishment are up-to-date with new changes. During this stage, we will instruct both staff members and the owners themselves, in order to achieve the cohesion we seek for the purpose of adapting to the interests of the project.</p>
+            </div>
+            <div class="grid-how-text">
+                <h3>4. Monitor the results</h3>
+                <p>Now that the objectives are clear, and all the staff and other members of the hotel ecosystem have been informed, the key moment arrives: the implementation, where we will put into practice each new measure that we have adopted. Subsequently, we will carry out periodic measurements in order to find out performance, analyse the results obtained and redefine the steps to take.</p>
+            </div>
+            <div class="grid-how-img">
+                <img src="{% static 'img/reshot-icon-success.png' %}">
+            </div>
+
+                    </div>
+        
+    </section>
+
+    <section class="benefits">
+        <h2>What are the benefits ?</h2>
+
+    </section>
+    <div class="btn-container">
+        <a id="btn-quote" href="contact.php">Get your free assessment !</a>
+    </div>
+
+    {% endblock content %}
 
 </body>
 </html>
