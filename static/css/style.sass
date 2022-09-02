@@ -1,0 +1,752 @@
+:root
+    --angle: 10
+
+//Variables screen size
+$SM:740px
+$L:1200px    
+
+//Variables fonts and size
+$navfont-color: brown
+$bodyfontsize-xl:20px
+$bodyfontsize-n:16px
+$bodyfontsize-s: 12px
+$body-font-fam: 'Champagne & Limousines', sans-serif
+$bg-color: beige
+$hover-color: #1e2125
+
+//Variables partial borders
+$size2: 2px
+$size40: 40px
+$position: -10px
+$border-bg-col: rgba(140, 20, 137, 100)
+
+body 
+    margin: 0px
+    padding: 0px
+    font-family: 'Liberation Mono', Ubuntu
+    font-size: $bodyfontsize-n
+    box-sizing: border-box
+    background-color: $bg-color
+
+p
+    text-align: center
+    @media screen and (max-width: $SM)
+        font-size: 12px
+    
+#myBtn
+    display: none
+    position: fixed
+    bottom: 20px
+    right: 30px
+    background-color: black
+    z-index: 99
+    font-size: $bodyfontsize-n
+    border: none
+    outline: none
+    border-radius: 5px
+    padding: 10px
+    color: white
+    cursor: pointer
+    @media screen and (max-width: $SM)
+        visibility: hidden
+
+#myBtn:hover
+    background-color: #ffdf00
+    color: black
+
+.bg-cont
+    position: absolute
+    width: 100vw
+    height: auto
+    z-index: -1
+
+.bg-image
+    left: 0px
+    top: 0px
+    width: 100%
+    height: 100%
+    overflow: auto
+    opacity: 0.5
+    @media screen and (max-width: $SM)
+        display: none
+
+.bg-image-small
+    position: absolute
+    left: 0px
+    top: 0px
+    width: 100%
+    overflow: auto
+    opacity: 0.5
+    display: none
+    @media screen and (max-width: $SM)    
+        display: block
+
+.intro-cont
+    z-index: 1
+    
+#logo
+    margin: 3em
+    width: 600px
+    height: auto
+    @media screen and (max-width: $SM)
+        width: 30vw
+
+.header-cont
+    width: 50vw
+    margin: 3em 0
+    @media screen and (max-width: $SM)
+        width: 100vw
+
+.services
+    margin: 5em
+    max-width: 1840px
+    @media screen and (max-width: $SM)
+        margin: 1px 1vw
+
+.services > h1
+    margin: 2em 0
+    @media screen and (max-width: $SM)
+        margin: 1em 0
+
+.btn-container
+    padding: 0 35vw
+    @media screen and (max-width: $SM)
+        padding: 0 12vw
+
+#btn-quote
+    border: 0px
+    padding: 1em 5em
+    line-height: 2.5
+    font-size: $bodyfontsize-xl
+    font-weight: bold
+    text-align: center
+    color: white
+    background-color: black
+    border-radius: 5px
+    @media screen and (max-width: $SM)
+        margin-top: 1em
+        line-height: 2
+        padding: 1em
+        font-size: 14px
+
+#btn-quote:hover 
+    background-color: #ffdf00
+    color: black
+    outline: 3px dashed grey
+    cursor: pointer
+
+.grid_services
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: auto
+    gap: 5em
+    padding: 0 10vw
+    @media screen and (max-width: $SM)
+        display: block
+        margin-bottom: 2em
+
+.box
+    box-shadow: (2px 0px 10px #4682b4)
+    position: relative
+    padding: 2em
+    z-index: 1
+    @media screen and (max-width: $SM)
+        margin: 1em
+
+.box h2
+    @media screen and (max-width: $SM)
+        margin: 10px 0 15px 0
+
+.box span
+    display: inline
+    @media screen and (max-width: $SM)
+        display: block
+
+.box p
+    margin: 3px
+
+#grad1, #grad2, #grad3, #grad4 
+    position: absolute
+    background: $border-bg-col
+
+#grad1
+    left: $position
+    top: $position
+    width: $size2
+    height: $size40
+
+#grad2
+    left: $position
+    top: $position
+    width: $size40
+    height: $size2
+
+#grad3
+    right: $position
+    bottom: $position
+    width: $size2
+    height: $size40
+
+#grad4
+    right: $position
+    bottom: $position
+    width: $size40
+    height: $size2
+
+
+.contact_section
+    background: #4682b4
+    padding-top: 2em
+    padding-bottom: 5em
+
+.contact_section > title
+    display: grid
+
+.openbtn
+    display: none
+    @media screen and (max-width: $SM)
+        display: block
+        width: 40px
+        height: 40px
+        margin-left: 80vw
+        background-color: transparent
+        border: none
+    
+.navbar
+    position: relative
+    display: grid
+    background-color: $bg-color
+    overflow: hidden
+    grid-template-columns: repeat(8, 1fr)
+    border-bottom: 2px solid teal
+    @media screen and (max-width: $SM)
+        grid-template-columns: 1fr
+        grid-template-rows: 10vh 10vh 10vh 10vh 25vh 35vh
+        height: 100%
+        position: fixed
+        z-index: 99
+        top: 0
+        left: 0
+        overflow-x: hidden
+        width: 0
+
+.navbar-link
+    text-decoration: none
+    font-family: 'Encode Sans Condensed'
+    letter-spacing: -0.05em
+    align-self: center
+    color: darkslategrey
+    font-size: $bodyfontsize-xl
+    text-align: center
+    padding: 30px 0
+    display: grid
+    @media screen and (max-width: $SM)
+        text-align: left
+        padding: 10px
+        align-self: start
+
+.navbar-link:hover
+    background-color: black
+    color: white
+
+#contact-link
+    @media screen and (max-width: $SM)
+        grid-row-start: 6
+        grid-row-end: 7
+
+#hamburger
+    width: 40px
+    height: 40px
+
+#closebtn
+    display: none
+    @media screen and (max-width: $SM)
+        display: block
+        justify-self: end   
+        font-size: 30px
+        text-decoration: none
+        margin-right: 30px
+        margin-top: 15px
+
+.icons
+    display: grid
+    grid-template-rows: repeat(3, 60px)
+    width: 80px
+    padding: 10px
+    grid-gap: 20px
+    top: 70%
+    position: fixed
+    @media screen and (max-width: $SM)
+        display: none
+
+.icons-footer
+    display: none
+    @media screen and (max-width: $SM)
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        padding: 10px
+        grid-column-gap: 20px
+        justify-items: center
+        margin: 5vh 20vw
+
+h1, h2, h3
+    font-family: 'Encode Sans Condensed', 'Ubuntu'
+    font-weight: 200px
+    text-align: center
+    text-transform: uppercase
+    @media screen and (max-width:$SM)
+        font-family: 'Blogger Sans','Ubuntu'
+
+h1
+    font-size: 48px
+    font-weight: lighter
+    letter-spacing: 4px
+    @media screen and (max-width:$SM)
+        font-size: 2.5em
+
+.heading
+    font-size: 48px
+    font-family: 'Champagne & Limousines', 'Ubuntu'
+    font-weight: bold
+    letter-spacing: 4px
+    @media screen and (max-width:$SM)
+        font-size: 2.5em
+
+h2 
+    font-size: 36px
+    letter-spacing: 1px
+    font-weight: lighter
+    @media screen and (max-width:$SM)
+        font-size: 1.5em
+
+h3
+    font-size: 1.7vw
+    text-align: left
+    font-weight: lighter
+
+#icon-arrow-down
+    margin-top: 3vh
+
+.pictures-section
+    background: #4682b4
+    padding: 15vh 30%
+    width: 800px
+    height: 120%
+    text-align: center
+    overflow: hidden
+    @media screen and (max-width: $SM)
+        padding: 5vh 0
+        width: 100vw
+
+.grid_pictures
+    display: flex
+    padding: 2em 0
+    overflow-x: auto
+    scroll-snap-type: x mandatory
+    scroll-behavior: smooth
+    -webkit-overflow-scrolling: touch
+    @media screen and (max-width: $SM)
+        font-size: $bodyfontsize-n
+
+
+.grid_pictures::-webkit-scrollbar
+    width: 0
+    height: 15px
+
+.grid_pictures::-webkit-scrollbar-thumb
+    background: black
+    border-radius: 10px
+
+.grid_pictures::-webkit-scrollbar-track
+    background: olivedrab
+
+.pics
+    scroll-snap-align: start 
+    flex-shrink: 0
+    width: 800px
+    height: 520px
+    margin-right: 3em
+    border-radius: 10px
+    transform-origin: center center
+    transform: scale(1)
+    transition: transform 0.5s
+    position: relative
+    @media screen and (max-width: $SM)
+        display: none
+
+.pics-s
+    display: none
+    @media screen and (max-width: $SM)
+        display: block
+        scroll-snap-align: start 
+        flex-shrink: 0
+        width: 300px
+        height: 195px
+        padding: 0 1.5em
+        border-radius: 10px
+        transform-origin: center center
+        transform: scale(1)
+        transition: transform 0.5s
+        position: relative
+
+.grid_pictures > div:target
+    transform: scale(0.8)
+        
+.flex-box
+    margin-bottom: 5vh
+    margin-top: 5vh
+    
+footer
+    display: flex
+    justify-items: center
+    background: #3c204f
+    color: white
+    padding: 1vh 0 0 0 
+    margin: 0px
+    @media screen and (max-width: $SM)
+        display: block
+        padding: 5vh 0
+
+.khreativ
+    flex: 1
+
+.credits
+    flex: 2
+    margin: 0 5vw
+
+.links
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    margin-top: 2vh
+    @media screen and (max-width: $SM)
+        grid-template-columns: 1fr
+
+.links a
+    text-decoration: none
+    color: white
+    text-decoration: underline
+    text-decoration-color: green
+    text-decoration-thickness: 5px
+
+.sublinks p
+    @media screen and (max-width: $SM)
+        margin: 20px 0       
+        
+#khreativ-title a
+    text-decoration: underline
+    text-decoration-thickness: 10px
+    text-decoration-color: green
+    color: white
+    font-size: 24px
+
+#website-admin a
+    text-decoration: underline
+    text-decoration-thickness: 5px
+    text-decoration-color: green
+    color: white
+    font-size: 16px
+
+.khreativ p
+    font-size: 16px
+
+
+.logo-top
+    width: 20vw
+    margin-top: 20px 
+    @media screen and (max-width: $SM)
+        width: 30vw
+
+.detail
+    margin: 150px auto
+    max-width: 1000px
+    padding: 0 20px
+    @media screen and (max-width: $SM)
+        margin: 0 2vw
+
+.skew-grid
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    column-gap: 24px
+    row-gap: 24px
+    transform: skewY(calc(var(--angle) * -1deg))
+    justify-items: center
+    @media screen and (max-width: $SM)
+        grid-template-columns: 1fr
+        grid-row-gap: 1em
+        margin-bottom: 5vh
+
+.skew-grid-item
+    position: relative
+    padding: 32px 32px 32px 0
+
+    &:before
+        content: ""
+        position: absolute
+        top: 0
+        bottom: 0
+        right: 0
+        left: 75px
+        background-color: #e6e6e6
+        z-index: -1
+    @media screen and (max-width: $SM)
+        width: 70vw
+
+.media
+    display: flex
+    align-items: center
+    transform: skewY(calc(var(--angle) * 1deg))
+
+.media-img
+    position: relative
+    background-color: aliceblue
+    top: 20px
+    margin-right: 24px
+    width: 150px
+    
+.detail h1
+    margin-bottom: 2em
+
+.card-odd h2
+    border-bottom: 1px solid white
+
+.card-even h2
+    border-bottom: 1px solid black
+
+.card-img-top
+    position: relative
+    height: 3px
+    width: 100%
+    display: grid
+
+.loner
+    justify-items: center
+    margin-top: 2em
+    display: grid
+
+.container
+    display: block
+    margin: 2vh 20em
+    @media screen and (max-width: $SM)
+        display: block
+        margin: 0 5vw
+
+.row-1
+    display: grid
+    grid-template-columns: 3fr 1fr
+    height: 2em
+
+.row-2
+    margin-top: 2em
+    display: grid
+    grid-template-columns: 1fr 2fr 1fr
+    @media screen and (max-width: $SM)
+        grid-template-columns: 1fr 2fr
+
+
+.row-3
+    display: grid
+    grid-template-columns: 1fr 3fr
+    height: 5em
+    @media screen and (max-width: $SM)
+        grid-template-columns: 3fr 1fr
+    
+.row-4
+    display: grid
+    grid-template-columns: 1fr 1fr 2fr
+    @media screen and (max-width: $SM)
+        grid-template-columns: 1fr 2fr
+
+.col h2
+    margin: 4vh 0
+
+.col img
+    margin-top: 2em
+    display: grid
+    width: 200px
+    height: 250px
+    @media screen and (max-width: $SM)
+        width: 100px
+        height: 125px
+        min-width: 80px
+
+.col p
+    padding: 0.5em
+
+#space
+    height: 20vh
+    @media screen and (max-width: $SM)
+        height: 0
+
+#space-2
+    @media screen and (max-width: $SM)
+        display: none
+
+.contact_section
+    background: #4682b4
+    padding-top: 2em
+    padding-bottom: 5em
+
+.contact_section > title
+    display: grid
+
+.grid_contact
+    display: grid
+    grid-template-columns: 1fr 1fr
+    margin: 0em 15em 7em 10em
+    @media screen and (max-width: $L)
+        font-size: $bodyfontsize-n
+        grid-template-columns: 1fr
+        grid-gap: 1vh
+        margin: 0em 0em
+
+.grid_form
+    display: grid
+    margin: 16px 3vw
+    grid-template-columns: 1fr 2fr
+    grid-template-rows: auto
+    @media screen and (max-width: $SM)
+        grid-template-columns: 1fr
+        max-width: 350px
+
+.grid_form > label
+    text-align: right
+
+.grid_form > label, input
+    margin: 5px
+    width: 30vw
+    height: 4vh
+    font-size: 20px
+    @media screen and (max-width: $SM)
+        max-width: 330px
+        width: 100vw
+
+.form-group > input, textarea
+    margin: 5px
+    border: 0.25px solid gray
+    min-height: 35px
+    border-radius: 5px
+    font-size: 20px
+
+.timestamp
+    display: none
+
+.email span
+    display: inline
+    @media screen and (max-width: 1500px)
+        display: block
+
+textarea
+    width: 30vw
+    height: 20vh
+    overflow: scroll
+    @media screen and (max-width: $SM)
+        max-width: 330px
+        width: 100vw
+
+.btn-cont
+    padding: 1vh 8vw
+    @media screen and (max-width: $SM)
+        padding: 2px
+
+.email[href^="mailto"]::before
+    content: url("../img/at-solid.svg")
+
+.email
+    color: white
+
+.btn
+    border: 0px
+    margin: 5px
+    line-height: 2.5
+    font-size: $bodyfontsize-xl
+    text-align: center
+    color: white
+    background-color: black
+    border-radius: 5px
+    width: 150px
+    @media screen and (max-width: $SM)
+        margin-top: 1em
+        line-height: 2
+
+button:hover 
+    background-color: #ffdf00
+    color: black
+    outline: 3px dashed grey
+    cursor: pointer
+
+.submit_button:active
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+
+.grid_countries
+    margin: 16px 3vw
+    display: grid
+    justify-items: center
+    @media screen and (max-width: $SM)
+        max-width: 350px
+        width: 100vw
+
+.card-countries
+    box-shadow: (2px 0px 10px #4682b4)
+    border-radius: 5px
+    width: 24vw
+    height: max-content
+    padding: 2em
+    margin: 1em
+    @media screen and (max-width: $SM)
+        width: 100vw
+        max-width: 270px
+        margin: 0
+        padding: 2em
+
+
+.countries
+    font-size: $bodyfontsize-n
+
+.email
+    text-decoration: none
+    color: rgba(0, 0, 0, 0.7)
+    
+.icon    
+    width: 20px
+    height: auto
+
+#email-sent
+    margin: 15vh 0 25vh 0
+
+.email-details
+    display: grid
+    grid-template-columns: 1fr 2fr
+    background-color: $bg_color
+    border: 0.5px solid gray
+    border-radius: 5px
+    margin: 0 20vw
+    padding-left: 5vw
+    overflow: scroll
+
+.label h2, .details h2
+    text-align: left
+
+.how
+    background-color: burlywood
+    padding: 5em
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0))
+
+.grid-how
+    margin: 0 20em
+    display: flex
+    flex-wrap: wrap
+    width: 900px
+    grid-gap: 20px
+
+.grid-how p
+    text-align: left
+    margin-left: 24px
+
+.grid-how > div
+    width: 500px
+
+.grid-how-img
+    flex: 2
+    display: flex
+    justify-content: center
+
