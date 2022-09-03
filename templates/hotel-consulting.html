@@ -1,25 +1,47 @@
-{% extends 'base.html' %}
-
-{% load static %}
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    
-    {% block title %}<title>Hotel Consulting</title>{% endblock title %}
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="57x57" href="../static/img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../static/img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../static/img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../static/img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../static/img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../static/img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../static/img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../static/img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../static/img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../static/img/favicon-96x96.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../static/img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Hospitality consultants based in Siem Reap and Pattaya. Your first stop to help you structure and run your hotel and restaurant efficiently.">
+    <meta name="keywords" content="hospitality, consulting, consultant, hotel, restaurant, business generation, training, revenue management, SEO, website development, how-to setup your business, how-to, blog, hotel blog, restaurant blog, Cambodia, Siem Reap, Phnom Penh, Kep, Sihanoukville">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="KhreatiV.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hotel Consulting</title>
+    <link rel="canonical" href="https://successconsultingasia.com/index.html">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+
+
+
 
 </head>
 <body>
-    {% block consulting %}
     <section id="first-page">
         <div class="wrapper">
                 <div class="content">
                 <header>
                 </header>
                 <div class="cont">   
-                    <img src="{% static 'img/SCS logo.pn' %}g" class="logo-top" alt="logo">
+                    <img src="../static/img/SCS logo.png" class="logo-top" alt="logo">
                     <h1>Sales & Marketing</h1>
                 </div>
                 </div>
@@ -28,14 +50,14 @@
         <div class="grid-box">
             <div class="card h-100 card-odd">
                 <div class="card-body card-body-odd">
-                    <img src="{% static 'img/rect843.png' %}" class="card-img-top" alt="decoration">
+                    <img src="../static/img/rect843.png" class="card-img-top" alt="decoration">
                     <h2>Marketing Plan</h2>
                     <p>A yearly plan defining all your marketing activities. Online, Social Media, promotions, special days or periods, fairs and trade, advertising campaigns, etc&hellip; This plan has to be thorough and accurate, budgeting will need this plan to be more precise.</p>
                 </div>
             </div>
             <div class="card h-100 card-even">
                 <div class="card-body card-body-even">
-                    <img src="{% static 'img/rect843.png' %}" class="card-img-top" alt="decoration">
+                    <img src="../static/img/rect843.png" class="card-img-top" alt="decoration">
                     <h2>Strategies</h2>
                     <p>Define your strategies and setup your measurement tools. How do you want to look compared to your competitors ? Within which price range ? Are you gonna be higher because your product is better and you think you can lead the pack ? Or do you prefer to skim the most possible guests even if they pay less ? </p>
                     <p>All strategies are valid, but they must be thought before they are implemented, and behind each and everyone of them, there must be a reflection and a reason for it.</p>
@@ -45,14 +67,14 @@
         <div class="grid-box">
             <div class="card h-100 card-even">
                 <div class="card-body">
-                    <img src="{% static 'img/rect843.png' %}" class="card-img-top" alt="decoration">
+                    <img src="../static/img/rect843.png" class="card-img-top" alt="decoration">
                     <h2>Social medias</h2>
                     <p>Have your social medias handled. Your social medias profile must be updated regularly, it&#39;s not much of whether there&#39;s something to say or not, but there must be something published. If yotheu don&#39;t occupy the place, someone else will.</p>
                 </div>
             </div>
             <div class="card h-100 card-odd">
                 <div class="card-body">
-                    <img src="{% static 'img/rect843.png' %}" class="card-img-top" alt="decoration">
+                    <img src="../static/img/rect843.png" class="card-img-top" alt="decoration">
                     <h2>SEO advertising campaigns</h2>
                     <p>Fully equipped in term of technology, we can put in place your ads campaign for Google Ads, Facebook and so on. They&#39;ll be setup based on keywords linked to your business and will regularly be updated and monitored.</p>
                 </div>
@@ -65,14 +87,14 @@
         <div class="grid-box">
             <div class="card h-100 card-odd">
                 <div class="card-body card-body">
-                    <img src="{% static 'img/rect843.png' %}" class="card-img-top" alt="decoration">
+                    <img src="../static/img/rect843.png" class="card-img-top" alt="decoration">
                     <h2>Distribution Channels</h2>
                     <p>You have choice either to have a Channel Manager which will handle your availability in a set of distribution channels (booking.com, agoda, expedia, &hellip;) in real time. Or you or your staff do it. If you go for the second solution, it requires more attention, if the sales are still open on one channel on a day where the hotel or one category of rooms is already full occupied, you will end up with some overbooking. It might sometime be difficult to handle and can lead to the kind of reviews nobody wants.</p>
                 </div>
             </div>
             <div class="card h-100 card-even">
                 <div class="card-body">
-                    <img src="{% static 'img/rect843.png' %}" class="card-img-top" alt="decoration">
+                    <img src="../static/img/rect843.png" class="card-img-top" alt="decoration">
                     <h2>Website development</h2>
                     <p>We are fully trained and able to come up with long term solutions for your website. Not through a website builder, but with real coding, each and every line of code being doing something, and having written those lines helps to fix in case of problem.</p>
                 </div>
@@ -81,7 +103,7 @@
         <div class="grid-double" id="double">
             <div class="card h-100 card-even" style="width: 60em">
                 <div class="card-body card-body-odd">
-                    <img src="{% static 'img/rect843.png' %}" class="card-img-top" alt="decoration">
+                    <img src="../static/img/rect843.png" class="card-img-top" alt="decoration">
                     <h2>Software</h2>
                     <p>Nowadays there are on the market so many software solutions available to help you run your property, that the first difficulty is to select the right one. Knowing most of them for having worked with some, or discussed with colleagues who have worked with others, we can give you a valuable advice on which one would best suit your needs.</p>
                     <h3>Property Management System (PMS)</h3>
@@ -97,14 +119,85 @@
         <div class="loner">
             <div class="card h-100 card-odd">
                 <div class="card-body">
-                    <img src="{% static 'img/rect843.png' %}" class="card-img-top" alt="decoration">
+                    <img src="../static/img/rect843.png" class="card-img-top" alt="decoration">
                     <h2>Internet Security</h2>
                     <p>It&#39;s important to know good solutions in term of security, it&#39;s not fun to be hacked and there are ways to prevent against it. Nobody likes the idea that someone, one day could look into his systems and get money redirect from your customer to some hacker. Let&#39;s work that out and prevent from any type of fraud.</p>
                 </div>
             </div>
         </div>
     </section>
-    {% endblock consulting %}
+    <section class="pictures-section" id="pictures-section">
+    
+        <div class="grid_pictures">
+            <div class="pics" id="pic-1"><img src="../static/img/robert-collins-QyqVAt9xw2I-unsplash.webp" alt="Robert Collins photo"></div>
+            <div class="pics" id="pic-2"><img src="../static/img/resized_steffen-b-qDZ-Xd8dX6w-unsplash.webp" alt="Stephen B photo"></div>
+            <div class="pics" id="pic-3"><img src="../static/img/resized_the-anam-_twiIcIsp2s-unsplash.webp" alt="Annam Hoi An photo"></div>
+            <div class="pics" id="pic-4"><img src="../static/img/resized_sara-dubler-Koei_7yYtIo-unsplash.webp" alt="Sarah Dubler Ngo photo"></div>
+            <div class="pics" id="pic-5"><img src="../static/img/vicky-t-EY3tC81nFt0-unsplash.webp" alt="Vicky T photo"></div>
+            <div class="pics" id="pic-6"><img src="../static/img/resized_alexander-kaunas-G6eXUCi8JgA-unsplash.webp" alt="Alexander Kaunas photo"></div>
+            <div class="pics" id="pic-7"><img src="../static/img/resized_brooke-lark-kXQ3J7_2fpc-unsplash.webp" alt="Brooke Lark photo"></div>
+            <div class="pics" id="pic-8"><img src="../static/img/resized_charlie-costello-YVMINsxTIKY-unsplash.webp" alt="Charlie Costello photo"></div>
+            <div class="pics" id="pic-9"><img src="../static/img/resized_christian-lambert-diYY2TMBY5g-unsplash.webp" alt="Christian Lambert photo"></div>
+            <div class="pics" id="pic-10"><img src="../static/img/resized_dave-photoz-Ksrmm0EHdgw-unsplash.webp" alt="Dave Photoz photo"></div>
+            <div class="pics" id="pic-11"><img src="../static/img/resized_jess-torre-H7TGM7Sx0o4-unsplash.webp" alt="Jess Torre photo"></div>
+            <div class="pics" id="pic-12"><img src="../static/img/resized_rhema-kallianpur-uocSnWMhnAs-unsplash.webp" alt="Rhema Kallianpur photo"></div>
+            <div class="pics-s" id="pic-2-1"><img src="../static/img/img-small/resized_robert-collins-QyqVAt9xw2I-unsplash.webp" alt="Robert Collins photo"></div>
+            <div class="pics-s" id="pic-2-2"><img src="../static/img/img-small/resized_resized_steffen-b-qDZ-Xd8dX6w-unsplash.webp" alt="Stephen B photo"></div>
+            <div class="pics-s" id="pic-2-3"><img src="../static/img/img-small/resized_resized_the-anam-_twiIcIsp2s-unsplash.webp" alt="Annam Hoi An photo"></div>
+            <div class="pics-s" id="pic-2-4"><img src="../static/img/img-small/resized_resized_sara-dubler-Koei_7yYtIo-unsplash.webp" alt="Sarah Dubler Ngo photo"></div>
+            <div class="pics-s" id="pic-2-5"><img src="../static/img/img-small/resized_vicky-t-EY3tC81nFt0-unsplash.webp" alt="Vicky T photo"></div>
+            <div class="pics-s" id="pic-2-6"><img src="../static/img/img-small/resized_resized_alexander-kaunas-G6eXUCi8JgA-unsplash.webp" alt="Alexander Kaunas photo"></div>
+            <div class="pics-s" id="pic-2-7"><img src="../static/img/img-small/resized_resized_brooke-lark-kXQ3J7_2fpc-unsplash.webp" alt="Brooke Lark photo"></div>
+            <div class="pics-s" id="pic-2-8"><img src="../static/img/img-small/resized_resized_charlie-costello-YVMINsxTIKY-unsplash.webp" alt="Charlie Costello photo"></div>
+            <div class="pics-s" id="pic-2-9"><img src="../static/img/img-small/resized_resized_christian-lambert-diYY2TMBY5g-unsplash.webp" alt="Christian Lambert photo"></div>
+            <div class="pics-s" id="pic-2-10"><img src="../static/img/img-small/resized_resized_dave-photoz-Ksrmm0EHdgw-unsplash.webp" alt="Dave Photoz photo"></div>
+            <div class="pics-s" id="pic-2-11"><img src="../static/img/img-small/resized_resized_jess-torre-H7TGM7Sx0o4-unsplash.webp" alt="Jess Torre photo"></div>
+            <div class="pics-s" id="pic-2-12"><img src="../static/img/img-small/resized_resized_rhema-kallianpur-uocSnWMhnAs-unsplash.webp" alt="Rhema Kallianpur photo"></div>
+    
+        </div>
+    
+    </section>
+
+
+    <footer id="footer">
+        <div class="khreativ">
+            <h2>Made by</h2>    
+            <p id="khreativ-title"><a href="https://hyperswiss.github.io/khreativ-website"><strong>KhreatiV</strong></a> Web Design</p>
+            <p class="sr">Siem Reap</p>
+            <br>
+        </div>
+    
+        <div class="credits">
+            <h2>Images Credits</h2>
+            <div class="links">
+                <div class="sublinks">
+                    <p><a href="https://unsplash.com/photos/YMOHw3F1Hdk">Nik Lanus</a></p>
+                    <p><a href="https://unsplash.com/photos/WyxqQpyFNk8">Giorgio Trovato</a></p>
+                    <p><a href="https://unsplash.com/photos/uocSnWMhnAs">Remha Kallianpur</a></p>
+                    <p><a href="https://unsplash.com/photos/rNN8leuLnU4">Fernando Santander</a></p> 
+                    <p><a href="https://unsplash.com/photos/n_IKQDCyrG0">Marten Bjork</a></p>
+                </div>
+                <div class="sublinks">
+                    <p><a href="https://unsplash.com/photos/n95VMLxqM2I">Cytonn Photography</a></p>
+                    <p><a href="https://unsplash.com/photos/nYGMnyZHR2I">Okeykat</a></p>
+                    <p><a href="https://unsplash.com/photos/YVMINsxTIKY">Charlie Costello</a></p>
+                    <p><a href="https://unsplash.com/photos/CH7JI7pwVcU">Mega Cesaria</a></p>
+                </div>
+                <div class="sublinks">
+                    <p><a href="https://unsplash.com/photos/EY3tC81nFt0">Vicky T</a></p>
+                    <p><a href="https://unsplash.com/photos/vcu-OZBxxRk">Ammie Ngo</a></p>
+                    <p><a href="#">xxx</a></p>
+                    <p><a href="https://unsplash.com/photos/_dYoARMMtQw">Nick Fewings</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="icons-footer">
+            <a href="https://www.facebook.com/Scs-Consulting-Services-102065865618974" class="icon-social"><img src="../static/img/logo-facebook.png" alt="facebook logo"></a>
+            <a href="https://www.linkedin.com/company/success-consulting-asia/" class="icon-social"><img src="../static/img/logo-linkedin.png" alt="linkedin logo"></a>
+            <a href="mailto:cambodia.admin@successconsultingasia.com" class="icon-social"><img src="../static/img/email-icon.png" alt="email logo"></a>
+        </div>
+    
+    </footer>
 
 </body>
 </html>
